@@ -1,0 +1,32 @@
+The following translations were ignored because they may have invalid formatting:
+
+Formatting Needed: '%1.1f %%'
+  'Infill: %1.1f%%  '
+ in:
+  '填充: %1.0f%%  '
+
+Formatting Needed: '%1.2f %1.1f %1.2f %1.1f %1.2f %1.1f %1.2f %1.1f'
+  'TYPE: [mm/s], [mm^3/s]
+Perim:   %1.2f,  %1.1f
+Loops:   %1.2f,  %1.1f
+Solid:   %1.2f,  %1.1f
+Sparse:  %1.2f,  %1.1f'
+ in:
+  '類型: [速度], [加速度]
+外圈:   %1.1f,  %1.1f
+內圈:   %1.1f,  %1.1f
+頂底:   %1.1f,  %1.1f
+填充:   %1.1f,  %1.1f'
+
+Formatting Needed: '%1.2f %1.1f %1.1f %1.2f %1.1f %1.1f %1.2f %1.1f %1.1f %1.2f %1.1f %1.1f'
+  'TYPE: [mm/s], [mm^3/s]
+Perim:   %1.2f,  %1.1f-%1.1f
+Loops:   %1.2f,  %1.1f-%1.1f
+Solid:   %1.2f,  %1.1f-%1.1f
+Sparse:  %1.2f,  %1.1f-%1.1f'
+ in:
+  '類型: [速度], [加速度]
+外圈:   %1.1f,  %1.1f-%1.1f
+內圈:   %1.1f,  %1.1f-%1.1f
+頂底:   %1.1f,  %1.1f-%1.1f
+填充:   %1.1f,  %1.1f-%1.1f'

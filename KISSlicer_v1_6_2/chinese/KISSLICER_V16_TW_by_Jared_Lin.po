@@ -1,0 +1,4084 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_TW\n"
+
+#. KISSlicer Translation File
+#. - Thank you for your help!!
+#. - Save this file as 'KISSlicer_[your language code].po'
+#. - Fill in the msgstr values with translations of the matching msgid value
+#. - Leave any characters you do not recognize
+#. - Any translation left blank will default to the original English
+#. - You can use standard gettext tools (like Poedit) to create a .po file
+#.
+#. - Please enter 'XYZ Translation by [your name(s)]'
+msgid "_Translation_By_"
+msgstr "_翻譯者_元力智庫有限公司_林于傑_"
+
+#. Menu Item
+msgid ""
+"<LF><LF>The Tuning Wizard will linearly interpolate the Parameter chosen by "
+"the user as a function of Z.<LF><LF>'Tune_Value at Z = 0' will be the value "
+"of the Parameter on the bottom layers.<LF><LF>'Tune_Value at Z = top' will "
+"be the value of the Parameter on the top layers of the tallest model printed."
+"<LF><LF><LF>Select a Tuning Parameter to see recommendations specific to "
+"that test. A rough recommended range will also be shown as (lo - hi)."
+msgstr ""
+
+#. Menu Item
+msgid ""
+"<LF>(Note: increasing the oversample resolution will reduce memory usage)"
+msgstr ""
+
+#. Menu Item
+msgid ""
+"<LF><TUNINGVAL><LF><LF>This mode does not change the G-code at all, but "
+"still updates the <TUNINGVAL> G-code token so you can use it for various "
+"purposes in the 'Every N Layers' G-code (and elsewhere)."
+msgstr ""
+
+#. Menu Item
+msgid ""
+"<LF>Destring Length [mm]<LF>(0 - 10)<LF><LF>The model for this test should "
+"have multiple tall spires. Three cylinders of diameter 10 mm and 50 mm tall "
+"works well. Run the test destring values from 0 mm up to the suspected "
+"maximum destring length.<LF><LF>Destring tuning should happen after "
+"PreloadVE tuning, as a properly tuned Preload will minimize the amount of "
+"destring retraction required to get string-free prints."
+msgstr ""
+
+#. Menu Item
+msgid ""
+"<LF>Flow Rate [mm^3/s]<LF>(10 - 1)<LF><LF>Use the same model and style "
+"profile as the recommended in the Temperature test.<LF><LF>Start with the "
+"faster flow rate at Z = 0, since it will take a long time to print the solid "
+"bottom layers at the lower flow rate.<LF><LF>Pick the range where the "
+"surface quality looks good. Make sure the extruder doesn't skip.  Materials "
+"like TPU may have a very narrow flow rate range (both for quality and "
+"because the density is flow dependent)."
+msgstr ""
+
+#. Menu Item
+msgid ""
+"<LF>Temperature [C]<LF>(manufacturer's recommendation)<LF><LF>The printer "
+"profile must have the 'Warm Same Ext' and 'Cool Same Ext' G-code defined."
+"<LF><LF>Try a style profile with 1.5 loops in vase mode, and a skin "
+"thickness ~= 2 layers. Use the same rounded model from the PreloadVE test."
+"<LF><LF>Once the test is done and the part cooled, use pliers to check the "
+"inter-layer bonding strength at various Z heights.  Pick a Z value that "
+"shows a nice surface quality and good bonding."
+msgstr ""
+
+#. Menu Item
+msgid ""
+"                    Welcome to KISSlicer!<LF>How would you characterize your "
+"3D printing experience level?"
+msgstr ""
+
+#. Widget
+msgid "  Ext. Priority<LF>  (per model)"
+msgstr ""
+
+#. Tooltip for '  Ext. Priority<LF>  (per model)'
+msgid ""
+"In case of overlapping meshes, mapped to different extruders, this defines "
+"the extruders' priority.  Press [Set] to update"
+msgstr ""
+
+#. Widget
+msgid "$ / cm^3"
+msgstr ""
+
+#. Tooltip for '$ / cm^3'
+msgid "Cost per cm^3, use whatever currency type you wish"
+msgstr "計算材料每cm^3的成本, 你可以用任何貨幣單位"
+
+#. Widget
+msgid "$ / hour"
+msgstr ""
+
+#. Tooltip for '$ / hour'
+msgid "Cost of running this machine for one hour"
+msgstr "機台列印一小時的成本"
+
+#. Widget
+msgid "$ for an entire spool"
+msgstr "整捲線軸的價格"
+
+#. Tooltip for '$ for an entire spool'
+msgid "How much did the whole spool cost...no need to use USD"
+msgstr "整個線軸所花費的金額，單位可以自行定義"
+
+#. Menu Item
+msgid "%s<LF>Thank you!"
+msgstr ""
+
+#. Widget
+msgid "%z"
+msgstr "%Z"
+
+#. Tooltip for '%z'
+msgid "How much will the model shrink in height after cooling"
+msgstr "冷卻後Z軸向的模型收縮率"
+
+#. Widget
+msgid "&Default"
+msgstr "預設"
+
+#. Tooltip for '&Default'
+msgid "Set selected sub-meshes to the Default Extruder"
+msgstr ""
+
+#. Widget
+msgid "&Open"
+msgstr "開啟"
+
+#. Tooltip for '&Open'
+msgid "Click to add models (or Drag-n-Drop on the 3D preview)"
+msgstr "選擇加入模型"
+
+#. Widget
+msgid "&Profile Settings"
+msgstr "切片參數設定"
+
+#. Tooltip for '&Profile Settings'
+msgid "Show Settings Window"
+msgstr "顯示設定頁面"
+
+#. Widget
+msgid "&Save"
+msgstr "存檔"
+
+#. Tooltip for '&Save'
+msgid "Save the G-code to a file"
+msgstr "儲存.gcode"
+
+#. Widget
+msgid "&Slice"
+msgstr "切片"
+
+#. Tooltip for '&Slice'
+msgid ""
+"[Slice] will generate the G-code paths, and [Save] will export them.  Many "
+"settings will not trigger a reslice as they affect only computations that "
+"happen on export."
+msgstr "[切片]將產生模型路徑. [存檔]將模型路徑儲存成檔案."
+
+#. Widget
+msgid "&Stop"
+msgstr "停止"
+
+#. Tooltip for '&Stop'
+msgid "Stop the current slicing operation"
+msgstr "停止切片動作"
+
+#. Widget
+msgid "&Void"
+msgstr "空"
+
+#. Tooltip for '&Void'
+msgid "Set selected sub-meshes to void (empty)"
+msgstr ""
+
+#. Widget
+msgid "'Fast' (Lower quality)"
+msgstr "最高列印速度"
+
+#. Tooltip for ''Fast' (Lower quality)'
+msgid "X"
+msgstr "X面"
+
+#. Widget
+msgid "'Precise' (Slower)"
+msgstr "最低列印速度"
+
+#. Widget
+msgid "* sets the speed for the Stacked version as well"
+msgstr ""
+"<LF><LF>此頁面設定的所有速度並非實際速度<LF>實際列印速度請切換到樣式欄位調整"
+
+#. Widget
+msgid ", Y"
+msgstr ""
+
+#. Tooltip for ', Y'
+msgid ""
+"KISSlicer treats the center of the bed as 0,0 but many printers do not.  "
+"Enter the Y coordinate of the center of the bed (KISSlicer will offset the "
+"output G-code)"
+msgstr "輸入列印機Y軸中心點"
+
+#. Widget
+msgid "..."
+msgstr ""
+
+#. Tooltip for '...'
+msgid "Choose the Bed STL Model"
+msgstr "選擇機台列印底版模型"
+
+#. Widget
+msgid "0"
+msgstr ""
+
+#. Widget
+msgid "0.0"
+msgstr ""
+
+#. Tooltip for '0.0'
+msgid "The Z value of the layer to display"
+msgstr "顯示圖層Z值"
+
+#. Widget
+msgid ""
+"1. pick Ext, [Load Values]<LF>2. save & run G-code (ext off bed)<LF>3. after "
+"beep remove matl, let ooze<LF>4. measure ooze, [Store] result"
+msgstr ""
+
+#. Widget
+msgid "1st"
+msgstr "首層"
+
+#. Tooltip for '1st'
+msgid "Minimum thickness of the first slice."
+msgstr "首層厚度."
+
+#. Widget
+msgid "1st Layer Max Speed"
+msgstr "首層最高列印速度"
+
+#. Tooltip for '1st Layer Max Speed'
+msgid "Maximum speed to travel while extruding the 1st layer."
+msgstr "限制首層的列印速度，單位是mm/s."
+
+#. Widget
+msgid "1st Width"
+msgstr "首層寬度"
+
+#. Tooltip for '1st Width'
+msgid "Extrusion width of the interface paths on the 1st layer only, in [mm]."
+msgstr "僅影響首層擠料寬度，單位[mm]."
+
+#. Widget
+msgid "1st Zgap"
+msgstr "首層Z間隙"
+
+#. Tooltip for '1st Zgap'
+msgid ""
+"Vertical Gap [mm] between the top of the raft interface and the bottom of "
+"the object."
+msgstr "筏板頂部與物件的垂直間隙，單位是mm."
+
+#. Widget
+msgid "3D"
+msgstr "3D"
+
+#. Tooltip for '3D'
+msgid "Show paths in 3D"
+msgstr "顯示3D路徑"
+
+#. Menu Item
+msgid "3D Background"
+msgstr "3D背景"
+
+#. Menu Item
+msgid "3D Systems (CubeX / BFB)"
+msgstr "3D系統 (CubeX / BFB)"
+
+#. Widget
+msgid "3D Window"
+msgstr "3D視窗"
+
+#. Menu Item
+msgid "5D - Abs E no Reset (makerbot)"
+msgstr "5D - Abs E no Reset (makerbot)"
+
+#. Menu Item
+msgid "5D - Absolute E"
+msgstr "5D - Absolute E"
+
+#. Menu Item
+msgid "5D - Relative E"
+msgstr "5D - Relative E (INFINITY3DP)"
+
+#. Menu Item
+msgid "5D-Abs E no Reset (makerbot)"
+msgstr "5D-Abs E no Reset (makerbot)"
+
+#. Widget
+msgid ""
+"<EXT+n> <MAXZ><LF><X> <Y> <Z> <E> <%><LF><NEXTX> "
+"<NEXTY><LF><DESTRING><LF><BED> <BOX> "
+"<TEMP><LF><WARM1/2/3/4><LF><MAIN1/2/3/4><LF><LAYER> <TELAPSED><LF><TREMAIN> "
+"<TTOTAL><LF><MATL> <ACCEL><LF><PRIMEX> <PRIMEY><LF><TUNINGVAL>"
+msgstr ""
+
+#. Widget
+msgid "> Loops"
+msgstr "> 表面內圈"
+
+#. Tooltip for '> Loops'
+msgid "Slowest speed of the head while extruding the loops"
+msgstr "表面內圈的最慢列印速度"
+
+#. Widget
+msgid "> Perimeter"
+msgstr "> 表面外圈"
+
+#. Tooltip for '> Perimeter'
+msgid "Slowest speed of the head while extruding the perimeter"
+msgstr "表面外圈的最慢列印速度"
+
+#. Widget
+msgid "> Solid Infill &&<LF>> Support*"
+msgstr "> 表面頂底<LF>> 物件支撐*"
+
+#. Tooltip for '> Solid Infill &&<LF>> Support*'
+msgid ""
+"Slowest speed of the head while extruding solid infill and support paths"
+msgstr "打底封頂與支撐的最慢列印速度"
+
+#. Widget
+msgid "> Sparse Infill*"
+msgstr "> 物件填充*"
+
+#. Tooltip for '> Sparse Infill*'
+msgid "Slowest speed of the head while extruding sparse infill"
+msgstr "物件填充的最慢列印速度"
+
+#. Widget
+msgid ">>> Loops"
+msgstr "> 表面內圈"
+
+#. Tooltip for '>>> Loops'
+msgid "Fastest speed of the head while extruding the loops"
+msgstr "表面內圈的最快列印速度"
+
+#. Widget
+msgid ">>> Perimeter"
+msgstr "> 表面外圈"
+
+#. Tooltip for '>>> Perimeter'
+msgid "Fastest speed of the head while extruding the perimeter"
+msgstr "表面外圈的最快列印速度"
+
+#. Widget
+msgid ">>> Solid Infill &&<LF>>>> Support*"
+msgstr "> 表面頂底<LF>> 物件支撐*"
+
+#. Tooltip for '>>> Solid Infill &&<LF>>>> Support*'
+msgid ""
+"Fastest speed of the head while extruding solid infill and support paths"
+msgstr "打底封頂與支撐的最快列印速度"
+
+#. Widget
+msgid ">>> Sparse Infill*"
+msgstr "> 物件填充*"
+
+#. Tooltip for '>>> Sparse Infill*'
+msgid "Fastest speed of the head while extruding sparse infill"
+msgstr "物件填充的最快列印速度"
+
+#. Widget
+msgid "@+ @material"
+msgstr "@+ @材料"
+
+#. Tooltip for '@+ @material'
+msgid ""
+"Marks if this Material Profile is associated with the currently selected "
+"Print Profile"
+msgstr "標記此設定與打印機描述檔關聯"
+
+#. Widget
+msgid "@+ @style"
+msgstr "@+ @表面"
+
+#. Tooltip for '@+ @style'
+msgid ""
+"Marks if this Style Profile is associated with the currently selected Print "
+"Profile"
+msgstr "標記此設定與打印機描述檔關聯"
+
+#. Widget
+msgid "@+ @support"
+msgstr "@+ @支撐"
+
+#. Tooltip for '@+ @support'
+msgid ""
+"Marks if this Support Profile is associated with the currently selected "
+"Print Profile"
+msgstr "標記此設定與打印機描述檔關聯"
+
+#. Widget
+msgid "@+2menu"
+msgstr "@+2選單"
+
+#. Tooltip for '@+2menu'
+msgid "Draw all layers below the selected layer (CTRL+L)"
+msgstr "設定選定層的属性"
+
+#. Widget
+msgid "@1-> Fix Settings Window"
+msgstr "@1-> 設置窗口對齊左下角"
+
+#. Tooltip for '@1-> Fix Settings Window'
+msgid ""
+"Fix the position of the settings window to the bottom left of the main "
+"KISSlicer window."
+msgstr "將設置窗口的位置修改到主KISSlicer窗口的左下角."
+
+#. Widget
+msgid "@2< Raft Speed"
+msgstr "上筏板速度上限"
+
+#. Tooltip for '@2< Raft Speed'
+msgid "Maximum speed to travel while extruding the top raft layer"
+msgstr "列印頂部筏板層時的最大速度，單位是mm/s"
+
+#. Widget
+msgid "@2< Stride"
+msgstr "@2< 線距"
+
+#. Tooltip for '@2< Stride'
+msgid ""
+"Spacing on the Upper layer of the raft.  The actual stride will be rounded "
+"to the nearest integer multiple of the extrusion width."
+msgstr "筏板上層的線與線距離."
+
+#. Widget
+msgid "@2< Thick"
+msgstr "@2< 厚度"
+
+#. Tooltip for '@2< Thick'
+msgid "Thickness of the Upper layer of the raft"
+msgstr "筏板上層厚度"
+
+#. Widget
+msgid "@2< Width"
+msgstr "@2< 線寬"
+
+#. Tooltip for '@2< Width'
+msgid "Extrusion Width of the Upper layer of the raft"
+msgstr "筏板上層擠出寬度"
+
+#. Widget
+msgid "@2<- Use Alternate Method @2<-"
+msgstr ""
+
+#. Widget
+msgid "@2> Cost Calc"
+msgstr "@2> 成本計算"
+
+#. Tooltip for '@2> Cost Calc'
+msgid "Calculate the cost per cm^3"
+msgstr "計算材料每cm^3的成本"
+
+#. Widget
+msgid "@2> Raft Speed"
+msgstr "下筏板速度上限"
+
+#. Tooltip for '@2> Raft Speed'
+msgid "Maximum speed to travel while extruding the bottom raft layer"
+msgstr "列印底部筏板層時的最大速度，單位是mm/s"
+
+#. Widget
+msgid "@2> Stride"
+msgstr "@2> 線距"
+
+#. Tooltip for '@2> Stride'
+msgid ""
+"Spacing on the Lower layer of the raft.  The actual stride will be rounded "
+"to the nearest integer multiple of the extrusion width."
+msgstr "筏板下層的線與線距離."
+
+#. Widget
+msgid "@2> Thick"
+msgstr "@2> 厚度"
+
+#. Tooltip for '@2> Thick'
+msgid "Thickness of the Lower layer of the raft"
+msgstr "筏板下層厚度"
+
+#. Widget
+msgid "@2> Width"
+msgstr "@2> 線寬"
+
+#. Tooltip for '@2> Width'
+msgid "Extrusion Width of the Lower layer of the raft"
+msgstr "筏板下層擠出寬度"
+
+#. Widget
+msgid "@8< Force"
+msgstr "@8< 預設值"
+
+#. Tooltip for '@8< Force'
+msgid "Force any settings above the 'Settings Level' to use defaults"
+msgstr ""
+
+#. Widget
+msgid "@< Fast             Precise@>"
+msgstr "@< 越快列印             越慢列印@>"
+
+#. Tooltip for '@< Fast             Precise@>'
+msgid ""
+"Controls the print speed (blending between the Printer profile's fast and "
+"slow speed settings)."
+msgstr ""
+
+#. Widget
+msgid "@< Matl<LF>G-code"
+msgstr "材料G碼"
+
+#. Menu Item
+msgid "@< Off [Support: %s] On@>"
+msgstr "@< 關 [支撐: %s] 開@>"
+
+#. Widget
+msgid "@< Off [Support]  Dense@>"
+msgstr ""
+
+#. Tooltip for '@< Off [Support]  Dense@>'
+msgid "Controls the density of the main support"
+msgstr ""
+
+#. Widget
+msgid "@< Printer<LF>G-code"
+msgstr "列印機G碼"
+
+#. Widget
+msgid "@<-"
+msgstr ""
+
+#. Tooltip for '@<-'
+msgid "Calculate the Heat Time Coefficient"
+msgstr ""
+
+#. Widget
+msgid "@<- Init"
+msgstr "@<- 設定"
+
+#. Tooltip for '@<- Init'
+msgid ""
+"Compute an initial value for PreloadVE.  It should be further refined using "
+"the Tuning Wizard."
+msgstr "為PreloadVE(預擠材料黏彈性)計算初始值，使用\"輔助調整\"來進一步改進."
+
+#. Widget
+msgid "@<- Sets initial temp,<LF>fans, PreloadVE"
+msgstr ""
+
+#. Widget
+msgid "@> Red triangles:<LF>face inward"
+msgstr ""
+
+#. Widget
+msgid "@line Blade edge:<LF>sharp crease"
+msgstr ""
+
+#. Widget
+msgid "@line More than 2 tris<LF>share this edge"
+msgstr ""
+
+#. Widget
+msgid "@line Only 1 triangle<LF>shares this edge"
+msgstr ""
+
+#. Widget
+msgid "@line This edge is on a<LF>degenerate tri"
+msgstr ""
+
+#. Widget
+msgid "@line Winding order<LF>does not match"
+msgstr ""
+
+#. Menu Item
+msgid "About"
+msgstr "關於"
+
+#. Menu Item
+msgid "Above 75%% infill, straight sparse infill is recommended...set it?"
+msgstr ""
+
+#. Widget
+msgid "Actual Speeds"
+msgstr "實際切片速度顯示區域"
+
+#. Menu Item
+msgid "All Models"
+msgstr "模型"
+
+#. Widget
+msgid "All speeds in [mm/s]"
+msgstr "所有速度設定[mm/s]"
+
+#. Widget
+msgid "Also on Top"
+msgstr "物件長支撐"
+
+#. Tooltip for 'Also on Top'
+msgid ""
+"Also use Interface Support when support is generated on top of the model"
+msgstr "支撐產生在物件模型上"
+
+#. Widget
+msgid "Angle"
+msgstr "角度"
+
+#. Tooltip for 'Angle'
+msgid "Angle of the Interface paths (relative to the regular support paths)"
+msgstr "表面路徑的角度"
+
+#. Widget
+msgid "Approximate Viscosity<LF>from Melt Flow Index"
+msgstr "材料黏稠度"
+
+#. Tooltip for 'Approximate Viscosity<LF>from Melt Flow Index'
+msgid "If you know the MFI, KISSlicer will (roughly) approximate a viscosity."
+msgstr "如果您知道MFI，KISSlicer將（粗略地）近似粘度。"
+
+#. Widget
+msgid "Associated Profiles"
+msgstr "關聯描述檔"
+
+#. Tooltip for 'Associated Profiles'
+msgid ""
+"Shows which profiles are associated with this Printer Profile.  This is for "
+"information only, there is no functional change."
+msgstr "顯示相關相聯的打印機描述檔."
+
+#. Menu Item
+msgid "Auto-Rotate For Packing"
+msgstr "自動旋轉組件"
+
+#. Widget
+msgid "Axis 1"
+msgstr ""
+
+#. Tooltip for 'Axis 1'
+msgid "E is standard, Mach3 uses A B C D"
+msgstr ""
+
+#. Widget
+msgid "Axis 2"
+msgstr ""
+
+#. Widget
+msgid "Axis 3"
+msgstr ""
+
+#. Widget
+msgid "Axis 4"
+msgstr ""
+
+#. Menu Item
+msgid "Background"
+msgstr "背景"
+
+#. Menu Item
+msgid "Base"
+msgstr ""
+
+#. Widget
+msgid "Base Period 2^N"
+msgstr ""
+
+#. Menu Item
+msgid "Basic"
+msgstr "入門模式"
+
+#. Widget
+msgid "Basics"
+msgstr ""
+
+#. Widget
+msgid "Bed"
+msgstr "熱床"
+
+#. Tooltip for 'Bed'
+msgid ""
+"If you have a heated bed, you can use the <BED> token in the G-code includes"
+msgstr "如果打印機有熱床，可以在G碼中的<BED>加入設定"
+
+#. Widget
+msgid "Bed Center [mm]  X"
+msgstr "平台中心 [mm]  X"
+
+#. Tooltip for 'Bed Center [mm]  X'
+msgid ""
+"KISSlicer treats the center of the bed as 0,0 but many printers do not.  "
+"Enter the X coordinate of the center of the bed (KISSlicer will offset the "
+"output G-code)"
+msgstr "輸入列印機X軸中心點"
+
+#. Widget
+msgid "Bed Dimensions [mm]"
+msgstr "平台尺寸 [mm]"
+
+#. Widget
+msgid "Bed Roughness [mm]"
+msgstr "平台粗糙度 [mm]"
+
+#. Tooltip for 'Bed Roughness [mm]'
+msgid "Bed Z_max - Z_min: 1st layer thickness is fattened to compensate"
+msgstr "平台粗度高點與低點相減值，給定數值以便於首層切層加厚補償"
+
+#. Widget
+msgid "Bed STL Model"
+msgstr "平台STL模型"
+
+#. Tooltip for 'Bed STL Model'
+msgid ""
+"Chose a STL model to represent the printer's bed (make sure the origin "
+"coincides with where the printer would deposit plastic at 0,0)"
+msgstr ""
+
+#. Widget
+msgid "Bed Size [mm]  X @<->"
+msgstr "平台尺寸 [mm]  X @<->"
+
+#. Tooltip for 'Bed Size [mm]  X @<->'
+msgid "Available print width of the bed."
+msgstr "可打印最大水平尺寸."
+
+#. Widget
+msgid "Bed is Round"
+msgstr "圓形平台"
+
+#. Tooltip for 'Bed is Round'
+msgid "For most delta printers, affects  display and model packing"
+msgstr "三角洲機器勾選"
+
+#. Widget
+msgid "Best Z [mm]"
+msgstr ""
+
+#. Tooltip for 'Best Z [mm]'
+msgid "Height of the model with the best surface"
+msgstr ""
+
+#. Widget
+msgid "Binary"
+msgstr "二進位"
+
+#. Menu Item
+msgid "Blue"
+msgstr "藍色"
+
+#. Widget
+msgid "Bond"
+msgstr "黏著"
+
+#. Tooltip for 'Bond'
+msgid ""
+"Help the part bond to the raft's interface by matching the 1st layer's "
+"paths.  This is only a good idea when the interface material does not bond "
+"well to the part."
+msgstr "第一層支撐路徑幫助黏合到筏板路徑，加強支撐底層附著."
+
+#. Widget
+msgid "Bottom Stepover"
+msgstr "偏移門檻 (下"
+
+#. Tooltip for 'Bottom Stepover'
+msgid ""
+"How much each path should overlap the previous layer on the underside.  "
+"Should be approximately 1/2 the extrusion width to not require support "
+"material. (Material dependent.)"
+msgstr ""
+"當層表面外圈與前層表面外圈XY路徑的偏移量，如果偏移量小於設定值則不需要支撐材"
+"料。(建議設定值為50%)."
+
+#. Widget
+msgid "Box"
+msgstr "熱場"
+
+#. Tooltip for 'Box'
+msgid ""
+"If you have a heated enclosure, you can use the <BOX> token in the G-code "
+"includes"
+msgstr "如果打印機有熱場，可以在G碼中的<BOX>加入設定"
+
+#. Widget
+msgid "Brim / Skirt (in [mm])"
+msgstr "外裙 / 側裙  [mm]"
+
+#. Widget
+msgid "Bumpy"
+msgstr ""
+
+#. Menu Item
+msgid "Can not open files of type '%s'<LF>(%s)"
+msgstr ""
+
+#. Widget
+msgid "Cancel"
+msgstr "取消"
+
+#. Tooltip for 'Cancel'
+msgid ""
+"Closes this window without creating the profile.  You can also press [Esc]"
+msgstr ""
+
+#. Menu Item
+msgid "Cancel Slicing"
+msgstr ""
+
+#. Menu Item
+msgid "Cellular"
+msgstr "立體細胞狀"
+
+#. Widget
+msgid "Center"
+msgstr "中心"
+
+#. Tooltip for 'Center'
+msgid "Center all models on the bed"
+msgstr "將所有模型放置於平台中心"
+
+#. Menu Item
+msgid "Change Registration Key"
+msgstr ""
+
+#. Menu Item
+msgid "Choose and Restore Reference Settings"
+msgstr "選擇參考設定檔"
+
+#. Menu Item
+msgid "Clearing '[X] Force' default settings above current level"
+msgstr ""
+
+#. Menu Item
+msgid "Coarse"
+msgstr "稀疏"
+
+#. Widget
+msgid "Color"
+msgstr "配色"
+
+#. Tooltip for 'Color'
+msgid "Select the color of this filament"
+msgstr "選擇線材顏色"
+
+#. Menu Item
+msgid "Color Scheme"
+msgstr "配色方案"
+
+#. Menu Item
+msgid "Color Scheme Presets"
+msgstr "預設配色方案"
+
+#. Widget
+msgid "Compute Cost"
+msgstr ""
+
+#. Widget
+msgid "Compute Initial<LF> ViscoElasticity"
+msgstr ""
+
+#. Tooltip for 'Compute Initial<LF> ViscoElasticity'
+msgid "Compute the initial PreloadVE value."
+msgstr ""
+
+#. Widget
+msgid "Compute the Cost"
+msgstr "計算成本"
+
+#. Tooltip for 'Compute the Cost'
+msgid "Compute the cost per volume"
+msgstr "計算線捲成本"
+
+#. Widget
+msgid "Compute the Warm-Up"
+msgstr "計算預熱"
+
+#. Tooltip for 'Compute the Warm-Up'
+msgid "Compute the Warm-Up factor"
+msgstr "計算預熱因素"
+
+#. Widget
+msgid "Computed<LF>PreloadVE [µs]"
+msgstr ""
+
+#. Menu Item
+msgid "Continue Slicing"
+msgstr "繼續切片"
+
+#. Menu Item
+msgid "Continue, and disable this warning for the rest of the session"
+msgstr ""
+
+#. Menu Item
+msgid "Convert Preload Settings"
+msgstr ""
+
+#. Widget
+msgid "Cool"
+msgstr "冷卻"
+
+#. Tooltip for 'Cool'
+msgid ""
+"If slowing a layer to reach 'Min Layer [s]', make sure the fan is at least "
+"at this Duty Cycle %"
+msgstr "如果列印層觸發單層時間時的風扇設定，單位是[%]"
+
+#. Widget
+msgid "Cool<LF>Same<LF>Ext"
+msgstr ""
+
+#. Tooltip for 'Cool<LF>Same<LF>Ext'
+msgid "This G-code is inserted when the current extruder is cooled."
+msgstr ""
+
+#. Widget
+msgid "Cool &&<LF>Retire<LF>Old Ext"
+msgstr ""
+
+#. Tooltip for 'Cool &&<LF>Retire<LF>Old Ext'
+msgid ""
+"This G-code is inserted when an extruder is deselected (usually set to a "
+"lower temperature for keep-warm or done)"
+msgstr ""
+
+#. Widget
+msgid "Cool [mm^3/s]"
+msgstr "風量 [mm^3/s]"
+
+#. Tooltip for 'Cool [mm^3/s]'
+msgid "For overhangs, the flow rate that the fan can fully cool"
+msgstr "對於懸垂，風扇可以完全冷卻的流量"
+
+#. Widget
+msgid "Copy"
+msgstr "複製"
+
+#. Tooltip for 'Copy'
+msgid "Copy this profile into a new one"
+msgstr "複製當前設定到新的描述檔"
+
+#. Menu Item
+msgid "Copy of "
+msgstr ""
+
+#. Widget
+msgid "Corners"
+msgstr "角落縫合"
+
+#. Tooltip for 'Corners'
+msgid "Place the seam on a corner, when available"
+msgstr "如果在該層可以找到轉角"
+
+#. Menu Item
+msgid "Could not open the file '%s'"
+msgstr ""
+
+#. Widget
+msgid "Count"
+msgstr "數量"
+
+#. Tooltip for 'Count'
+msgid "How many to print"
+msgstr "有多少列印"
+
+#. Widget
+msgid "Create"
+msgstr ""
+
+#. Tooltip for 'Create'
+msgid "Creates the new Support profile"
+msgstr ""
+
+#. Menu Item
+msgid "Create Profile Wizards"
+msgstr "建立描述檔"
+
+#. Menu Item
+msgid "Crown Path"
+msgstr "薄壁補償路徑"
+
+#. Widget
+msgid "Crown [mm]"
+msgstr "薄壁補償"
+
+#. Tooltip for 'Crown [mm]'
+msgid ""
+"Crowning tries to fill in small gaps and thin walls.  Crowning paths must be "
+"longer than this to be kept.  Negative values disable crowning. 1mm is a "
+"good starting value."
+msgstr "用於補償不足擠出寬度的模型薄壁，單位[mm]。<0禁用此選項，建議起始值1mm."
+
+#. Widget
+msgid "Custom Syntax  <TOKEN>=[G-code]"
+msgstr "字定義語法  <TOKEN>=[G-code]"
+
+#. Tooltip for 'Custom Syntax  <TOKEN>=[G-code]'
+msgid "This allows you to use per-material tokens as desired in the G-code"
+msgstr "這允許使用者編輯G碼中所需要的個別使用代碼"
+
+#. Menu Item
+msgid "Dark"
+msgstr "黑色"
+
+#. Widget
+msgid "Debug Img"
+msgstr ""
+
+#. Widget
+msgid "Default<LF>Extruder Mapping"
+msgstr "預設擠出機對應"
+
+#. Tooltip for 'Default<LF>Extruder Mapping'
+msgid "Note: changing any of these will force a re-slice."
+msgstr ""
+
+#. Widget
+msgid "Default<LF>Object Ext"
+msgstr "預設<LF>物件擠出機"
+
+#. Tooltip for 'Default<LF>Object Ext'
+msgid "Extruder for printing objects"
+msgstr "打印物件預設擠出機"
+
+#. Widget
+msgid "Defaults@>"
+msgstr ""
+
+#. Tooltip for 'Defaults@>'
+msgid "Prepends machine-dependent defaults into the G-code includes."
+msgstr ""
+
+#. Widget
+msgid "Delete"
+msgstr "刪除"
+
+#. Tooltip for 'Delete'
+msgid "Delete the current profile"
+msgstr "刪除目前描述檔"
+
+#. Menu Item
+msgid "Delete %s Profile '%s'?"
+msgstr "刪除 %s 描述檔 '%s'?"
+
+#. Menu Item
+msgid "Dense"
+msgstr "密集"
+
+#. Widget
+msgid "Destring [mm]"
+msgstr "回抽設定 [mm]"
+
+#. Tooltip for 'Destring [mm]'
+msgid ""
+"KISSlicer will trigger a destring/wipe event any time the travel path "
+"crosses the part surface"
+msgstr ""
+
+#. Menu Item
+msgid "Destring/Wipe/Jump Path"
+msgstr "回抽/抹除/跳躍 路徑"
+
+#. Widget
+msgid "Dia"
+msgstr "擴展"
+
+#. Tooltip for 'Dia'
+msgid ""
+"Expands the bottom layer by this distance (using Dia / ExtrusionWidth extra "
+"loops).  This helps the part adhere to the bed.  If Brim is enabled the "
+"loops on the first layer will always print from outside to inside."
+msgstr "側裙有助於物件底層黏著於平台."
+
+#. Menu Item
+msgid "Diagonal Non-Overlap (Cartesian printers)"
+msgstr "對角線步重疊 (笛卡爾打印機)"
+
+#. Widget
+msgid "Diameter [mm]"
+msgstr "線徑"
+
+#. Tooltip for 'Diameter [mm]'
+msgid "Precise diameter of the filament"
+msgstr "材料直徑，單位是mm"
+
+#. Menu Item
+msgid "Disable 3D View on Slice"
+msgstr "切片時禁用預覽"
+
+#. Menu Item
+msgid "Display Options"
+msgstr "視窗選項"
+
+#. Menu Item
+msgid "Display Previous Layer"
+msgstr "顯示上層路徑"
+
+#. Menu Item
+msgid "Do you wish to overwrite all four current G-code includes?"
+msgstr ""
+
+#. Widget
+msgid "Drive Length"
+msgstr "料管長度"
+
+#. Tooltip for 'Drive Length'
+msgid ""
+"The length between the drive wheel and the tip of the nozzle.  Direct drive "
+"extruders may be around 50 mm, while Bowden drive extruders can be easily "
+"500 mm"
+msgstr ""
+
+#. Widget
+msgid "Drive Length [mm]"
+msgstr ""
+
+#. Tooltip for 'Drive Length [mm]'
+msgid ""
+"Distance between the drive mechanism and the nozzle in [mm]. ('Bowden tube "
+"length')"
+msgstr ""
+
+#. Widget
+msgid "DrvLen1"
+msgstr ""
+
+#. Widget
+msgid "DrvLen2"
+msgstr ""
+
+#. Widget
+msgid "DrvLen3"
+msgstr ""
+
+#. Widget
+msgid "DrvLen4"
+msgstr ""
+
+#. Widget
+msgid "Edge Errors"
+msgstr "邊緣錯誤"
+
+#. Widget
+msgid "Elasticity [Pa]"
+msgstr ""
+
+#. Tooltip for 'Elasticity [Pa]'
+msgid ""
+"Young's Modulus of Elasticity of the plastic at the room temperature.  ABS "
+"is ~= 2.6e9 [Pascals]"
+msgstr ""
+
+#. Menu Item
+msgid "Enter Product Key"
+msgstr "輸入產品金鑰"
+
+#. Menu Item
+msgid "Enter Registration Key"
+msgstr "輸入註冊金鑰"
+
+#. Menu Item
+msgid "Enter the desired count (was %i):"
+msgstr ""
+
+#. Menu Item
+msgid "Enter the desired rotation in degrees (was %i):"
+msgstr ""
+
+#. Menu Item
+msgid "Enter the desired vertical count:"
+msgstr ""
+
+#. Menu Item
+msgid "Enter the desired vertical stride (height = %1.2f):"
+msgstr ""
+
+#. Menu Item
+msgid "Enter the scaling factor:"
+msgstr ""
+
+#. Widget
+msgid ""
+"Enter the values, choose a name for the<LF>Material Profile then click "
+"[Create]"
+msgstr ""
+
+#. Widget
+msgid ""
+"Enter the values, choose a name for the<LF>Printer Profile then click "
+"[Create]"
+msgstr ""
+
+#. Widget
+msgid ""
+"Enter the values, choose a name for the<LF>Style Profile then click [Create]"
+msgstr ""
+
+#. Widget
+msgid ""
+"Enter the values, choose a name for the<LF>Support Profile then click "
+"[Create]"
+msgstr ""
+
+#. Menu Item
+msgid "Error: failed to save '%s'.  Please check file permissions."
+msgstr ""
+
+#. Widget
+msgid "Expand tree to"
+msgstr ""
+
+#. Widget
+msgid ""
+"Experimentally determine the<LF>ViscoElasticity<LF>NOTE: This is an initial "
+"value.<LF>Refine it in the Tuning Wizard."
+msgstr ""
+
+#. Menu Item
+msgid "Expert"
+msgstr "專家模式"
+
+#. Widget
+msgid "Ext #1"
+msgstr "擠出機#1"
+
+#. Widget
+msgid "Ext #2"
+msgstr "擠出機#2"
+
+#. Widget
+msgid "Ext #3"
+msgstr "擠出機#3"
+
+#. Widget
+msgid "Ext #4"
+msgstr "擠出機#4"
+
+#. Widget
+msgid "Ext Map"
+msgstr "擠出機對映"
+
+#. Widget
+msgid "Ext Matl"
+msgstr ""
+
+#. Tooltip for 'Ext Matl'
+msgid "Select Extruder material mappings"
+msgstr ""
+
+#. Menu Item
+msgid "Extra Space (delta printers)"
+msgstr "額外空間 (三角洲打印機)"
+
+#. Widget
+msgid "Extruder"
+msgstr ""
+
+#. Widget
+msgid "Extruder<LF>Clearance"
+msgstr ""
+
+#. Tooltip for 'Extruder<LF>Clearance'
+msgid ""
+"Used for sequential prints, and the safe bed region for multi-material prints"
+msgstr ""
+
+#. Menu Item
+msgid "Extruder %i"
+msgstr ""
+
+#. Widget
+msgid "Extruder &1"
+msgstr "擠出機 &1 材質"
+
+#. Tooltip for 'Extruder &1'
+msgid "Set selected sub-meshes to Extruder 1"
+msgstr "設定擠出機 &1 材質"
+
+#. Widget
+msgid "Extruder &2"
+msgstr "擠出機 &2 材質"
+
+#. Tooltip for 'Extruder &2'
+msgid "Set selected sub-meshes to Extruder 2"
+msgstr "設定擠出機 &2 材質"
+
+#. Widget
+msgid "Extruder &3"
+msgstr "擠出機 &3 材質"
+
+#. Tooltip for 'Extruder &3'
+msgid "Set selected sub-meshes to Extruder 3"
+msgstr "設定擠出機 &3 材質"
+
+#. Widget
+msgid "Extruder &4"
+msgstr "擠出機 &4 材質"
+
+#. Tooltip for 'Extruder &4'
+msgid "Set selected sub-meshes to Extruder 4"
+msgstr "設定擠出機 &4 材質"
+
+#. Widget
+msgid "Extruder 1 Material"
+msgstr "擠出機 1 材質"
+
+#. Tooltip for 'Extruder 1 Material'
+msgid "Material loaded into extruder 1"
+msgstr "載入擠出機 1 材質"
+
+#. Widget
+msgid "Extruder 2 Material"
+msgstr "擠出機 2 材質"
+
+#. Tooltip for 'Extruder 2 Material'
+msgid "Material loaded into extruder 2"
+msgstr "載入擠出機 2 材質"
+
+#. Widget
+msgid "Extruder 3 Material"
+msgstr "擠出機 3 材質"
+
+#. Tooltip for 'Extruder 3 Material'
+msgid "Material loaded into extruder 3"
+msgstr "載入擠出機 3 材質"
+
+#. Widget
+msgid "Extruder 4 Material"
+msgstr "擠出機 4 材質"
+
+#. Tooltip for 'Extruder 4 Material'
+msgid "Material loaded into extruder 4"
+msgstr "載入擠出機 4 材質"
+
+#. Widget
+msgid "Extruder Hardware"
+msgstr "擠出機硬體"
+
+#. Widget
+msgid "Extruder Info [mm] for Preload"
+msgstr ""
+
+#. Widget
+msgid "Extruder Mapping"
+msgstr ""
+
+#. Widget
+msgid "Extruder Ordering Optimization"
+msgstr "擠出機順序優化"
+
+#. Tooltip for 'Extruder Ordering Optimization'
+msgid "Picks the extruder ordering scheme"
+msgstr "選擇擠出機順序方案"
+
+#. Widget
+msgid "Extruder Parameters"
+msgstr ""
+
+#. Tooltip for 'Extruder Parameters'
+msgid ""
+"These extruder dimensions are required for Preload calculations, and must be "
+"> 0."
+msgstr ""
+
+#. Widget
+msgid "Extruder temperature [C]"
+msgstr "擠出溫度 [C]"
+
+#. Tooltip for 'Extruder temperature [C]'
+msgid "Temperature you set for the extruder to reach"
+msgstr ""
+
+#. Widget
+msgid "Extruders"
+msgstr ""
+
+#. Tooltip for 'Extruders'
+msgid ""
+"The number of extruders on the printer.  For a single-nozzle, multiple-feed "
+"printer, use the number of extruder motors."
+msgstr ""
+
+#. Widget
+msgid "Extrusion Time Map"
+msgstr ""
+
+#. Widget
+msgid "Extrusion Width [mm]"
+msgstr "擠料寬度"
+
+#. Tooltip for 'Extrusion Width [mm]'
+msgid ""
+"Width of the extruded path (nozzle dia. is a good initial value). This "
+"should be > Layer Thickness"
+msgstr ""
+
+#. Widget
+msgid "Fan / Cool"
+msgstr "冷卻風扇"
+
+#. Widget
+msgid "Fan Off"
+msgstr "關閉風扇"
+
+#. Tooltip for 'Fan Off'
+msgid "G-code to turn of the fan, typically M107 but MakerBot uses M127"
+msgstr "風扇開啟G-code"
+
+#. Widget
+msgid "Fan On"
+msgstr "開啟風扇"
+
+#. Tooltip for 'Fan On'
+msgid "G-code to turn on the fan, typically M106 but MakerBot uses M126"
+msgstr "風扇關閉G-code"
+
+#. Widget
+msgid "Fan Z [mm]"
+msgstr "風扇開啟層高"
+
+#. Tooltip for 'Fan Z [mm]'
+msgid ""
+"The fan will only be enabled once the head is this distance from the bed. "
+"(Note: KS compensates for Z-offset)"
+msgstr "列印到一定Z軸距離後，風扇才會啟動"
+
+#. Widget
+msgid "Fan can do PWM<LF>(e.g. 'M106 Snnn')"
+msgstr ""
+
+#. Tooltip for 'Fan can do PWM<LF>(e.g. 'M106 Snnn')'
+msgid ""
+"The firmware accepts Fan PWM control codes.  If unchecked, Fan PWM will be "
+"approximated by alternating FanOn & FanOff commands."
+msgstr ""
+
+#. Widget
+msgid "Filament Diameter [mm]"
+msgstr ""
+
+#. Tooltip for 'Filament Diameter [mm]'
+msgid ""
+"Exact value if you have calipers.  Typical values are 1.75, 2.85, and 3.0 mm"
+msgstr ""
+
+#. Widget
+msgid "Filament used per Extruder"
+msgstr ""
+
+#. Tooltip for 'Filament used per Extruder'
+msgid "Filament used per extruder"
+msgstr ""
+
+#. Menu Item
+msgid "File"
+msgstr "檔案"
+
+#. Widget
+msgid "File Extension"
+msgstr "副檔名"
+
+#. Tooltip for 'File Extension'
+msgid "Common values are bfb or gcode"
+msgstr ""
+
+#. Menu Item
+msgid "File Handling"
+msgstr "檔案處理"
+
+#. Widget
+msgid "Fillet"
+msgstr "圓角"
+
+#. Tooltip for 'Fillet'
+msgid "Round the brim if checked."
+msgstr "側裙圓形邊角，有助於物件附著."
+
+#. Menu Item
+msgid "Fine"
+msgstr "精細"
+
+#. Widget
+msgid "Firmware"
+msgstr "韌體"
+
+#. Widget
+msgid "Firmware Type"
+msgstr "韌體類型"
+
+#. Tooltip for 'Firmware Type'
+msgid "Select the firmware type.  Absolute E is probably the most common."
+msgstr "選擇韌體類型."
+
+#. Menu Item
+msgid "Fix the mistakes"
+msgstr ""
+
+#. Menu Item
+msgid "Fixed Order (most cooling)"
+msgstr ""
+
+#. Menu Item
+msgid "Flip upside-down"
+msgstr ""
+
+#. Widget
+msgid "Flow Adjust"
+msgstr "流量調整"
+
+#. Widget
+msgid "Flow Rate [mm^3/s]"
+msgstr ""
+
+#. Tooltip for 'Flow Rate [mm^3/s]'
+msgid ""
+"Flow rate of the material during the test (should be in the middle of the "
+"working range for the material and extruder under test)."
+msgstr ""
+
+#. Widget
+msgid "Flow Tweak"
+msgstr "流量調整"
+
+#. Tooltip for 'Flow Tweak'
+msgid ""
+"The nominal flowrate is calculated based on path and extruder settings, but "
+"this can compensate for small material differences"
+msgstr "擠出量線徑和擠出機設定計算。但此設定值可以進行微調彌補材質差異"
+
+#. Menu Item
+msgid "Force Path Angle"
+msgstr ""
+
+#. Menu Item
+msgid "Foreground"
+msgstr "前景"
+
+#. Widget
+msgid "G-code"
+msgstr ""
+
+#. Tooltip for 'G-code'
+msgid "Reference G-code.  This may need tweaking for your printer."
+msgstr ""
+
+#. Menu Item
+msgid "G10/1"
+msgstr ""
+
+#. Widget
+msgid "G4 Dwell P is in seconds"
+msgstr ""
+
+#. Tooltip for 'G4 Dwell P is in seconds'
+msgid ""
+"Leave unchecked if P uses milliseconds.  Seems CubeX firmware might require "
+"this set."
+msgstr ""
+
+#. Menu Item
+msgid "GTK+"
+msgstr ""
+
+#. Widget
+msgid "Gain 1"
+msgstr "增益 1"
+
+#. Tooltip for 'Gain 1'
+msgid ""
+"Usually leave this at 1.  You can change it to account for new gear ratios "
+"or such"
+msgstr "通常設定值為1"
+
+#. Widget
+msgid "Gain 2"
+msgstr "增益 2"
+
+#. Widget
+msgid "Gain 3"
+msgstr "增益 3"
+
+#. Widget
+msgid "Gain 4"
+msgstr "增益 4"
+
+#. Widget
+msgid "Gap"
+msgstr "外擴間隙"
+
+#. Tooltip for 'Gap'
+msgid ""
+"If this is > 0 the Brim is pushed outward by Gap, turning it into a Skirt"
+msgstr "如果設定值>0，間隙向外擴展則側裙變成外群"
+
+#. Menu Item
+msgid "Generate G-code for all parts on the bed"
+msgstr ""
+
+#. Menu Item
+msgid "Gleam"
+msgstr ""
+
+#. Widget
+msgid "Grain"
+msgstr ""
+
+#. Widget
+msgid "Hardware"
+msgstr "硬體"
+
+#. Widget
+msgid "HeatT1"
+msgstr ""
+
+#. Tooltip for 'HeatT1'
+msgid "Coefficient for estimating warm time: seconds ~= HT * C^2"
+msgstr ""
+
+#. Widget
+msgid "HeatT2"
+msgstr ""
+
+#. Widget
+msgid "HeatT3"
+msgstr ""
+
+#. Widget
+msgid "HeatT4"
+msgstr ""
+
+#. Widget
+msgid "Heated Chamber (affects fan)"
+msgstr ""
+
+#. Tooltip for 'Heated Chamber (affects fan)'
+msgid "Check if this material gets printed in a heated chamber"
+msgstr ""
+
+#. Widget
+msgid "Height"
+msgstr ""
+
+#. Tooltip for 'Height'
+msgid "Scale so the max height is this"
+msgstr ""
+
+#. Menu Item
+msgid "Help / Info"
+msgstr "協助 / 資訊"
+
+#. Widget
+msgid "Ht"
+msgstr "高度"
+
+#. Tooltip for 'Ht'
+msgid "How thick to make the brim."
+msgstr "側裙高度設定."
+
+#. Widget
+msgid ""
+"If KISSlicer detects possible<LF>problems with a mesh, the<LF>triangles or "
+"edges will be color-<LF>coded to signify the problem type."
+msgstr ""
+
+#. Menu Item
+msgid "Import Image && Extrude"
+msgstr ""
+
+#. Widget
+msgid "In Extruder"
+msgstr ""
+
+#. Tooltip for 'In Extruder'
+msgid "Select which extruder(s) have  this new material loaded."
+msgstr ""
+
+#. Menu Item
+msgid "Inch -> mm"
+msgstr ""
+
+#. Widget
+msgid "Include Comments"
+msgstr ""
+
+#. Tooltip for 'Include Comments'
+msgid "Adds comments to the G-code (very very helpful!)"
+msgstr ""
+
+#. Widget
+msgid "Infill Density"
+msgstr ""
+
+#. Tooltip for 'Infill Density'
+msgid ""
+"Density of the Sparse Infill and Stacked Sparse Infill (ratio is 1/"
+"whole_number)"
+msgstr "簡單設定物件填充量，影響物件強度與重量"
+
+#. Widget
+msgid "Infill Extrusion<LF>Width [mm]"
+msgstr "填充寬度"
+
+#. Tooltip for 'Infill Extrusion<LF>Width [mm]'
+msgid ""
+"A good default is to make this the same as Extrusion Width; compared to the "
+"extrusion width: thinner reduces stress / warping, thicker improves bonding"
+msgstr "最好的設定是與擠料寬度一致，單位是[mm]"
+
+#. Widget
+msgid "Infill Style"
+msgstr "填充類型"
+
+#. Tooltip for 'Infill Style'
+msgid "Select what kind of sparse infill you want"
+msgstr "選擇想要的填充類型"
+
+#. Menu Item
+msgid "Infill: %1.1f%%  "
+msgstr "填充: %1.0f%%  "
+
+#. Menu Item
+msgid "Infill: Hollow"
+msgstr "填充: 空心"
+
+#. Menu Item
+msgid "Infill: Vase  "
+msgstr "填充: 花瓶 "
+
+#. Widget
+msgid "Inflate Raft<LF>&& Prime Gap"
+msgstr "筏板/預擠<LF>水平擴大"
+
+#. Tooltip for 'Inflate Raft<LF>&& Prime Gap'
+msgid ""
+"Inflate the raft (or skirt) by this many [mm] in all directions to stick "
+"better to the bed"
+msgstr "讓物件可以更完整貼合在平台上，單位是mm"
+
+#. Widget
+msgid "Inflate Support"
+msgstr "支撐水平擴大"
+
+#. Tooltip for 'Inflate Support'
+msgid ""
+"Inflate the support by this many [mm] in all directions (it can help "
+"strengthen undercut support)"
+msgstr "擴大支撐可以強化支撐，不容易倒塌，單位是mm"
+
+#. Widget
+msgid "Inset<LF>Surface [mm]"
+msgstr "表面內縮"
+
+#. Tooltip for 'Inset<LF>Surface [mm]'
+msgid ""
+"Adjust the surface inward (in X,Y plane).  Value should be > 0 and < "
+"Extrusion Width / 2"
+msgstr "物件XY表面內縮，0>=設定值<擠出寬度/2，單位為mm"
+
+#. Widget
+msgid "Inside"
+msgstr "填充"
+
+#. Tooltip for 'Inside'
+msgid "While extruding everything else set the fan to this Duty Cycle %"
+msgstr "列印填充或支撐時的風扇設定，單位是[%]"
+
+#. Widget
+msgid "Interface Ext"
+msgstr "表面擠出機"
+
+#. Tooltip for 'Interface Ext'
+msgid "Extruder for printing the top of the support just under the model"
+msgstr "打印表面支撐預設擠出機"
+
+#. Menu Item
+msgid "Intermediate"
+msgstr "普通"
+
+#. Menu Item
+msgid "Invalid Key!<LF><LF>%s"
+msgstr ""
+
+#. Widget
+msgid "Jitterº"
+msgstr "起始角度範圍"
+
+#. Tooltip for 'Jitterº'
+msgid "Randomly spread the start-point of each loop over this angle"
+msgstr "隨機分佈換層起點在設定角度範圍"
+
+#. Widget
+msgid "Join-Loop"
+msgstr "連接繞圈"
+
+#. Tooltip for 'Join-Loop'
+msgid "Join the Perimeter to the first loop inside it."
+msgstr "將外圈結束點連接第一個內圈起始點."
+
+#. Widget
+msgid "Joint"
+msgstr "統一"
+
+#. Tooltip for 'Joint'
+msgid ""
+"Force all models to share the same layer divisions.  In general you do NOT "
+"want this, unless printing multi-extruder prints on a single nozzle."
+msgstr ""
+"強制所有模型共用相同切層設定，通常不需要啟用此選項。除非是多進一出噴嘴."
+
+#. Widget
+msgid "KISSlicer PRO Features"
+msgstr "KISSlicer 進階功能"
+
+#. Menu Item
+msgid "Key Registered"
+msgstr ""
+
+#. Menu Item
+msgid "Languages"
+msgstr "語系"
+
+#. Widget
+msgid "Large Parts"
+msgstr ""
+
+#. Tooltip for 'Large Parts'
+msgid "Large Parts use a less-dense support"
+msgstr ""
+
+#. Widget
+msgid "Latch"
+msgstr "鎖定"
+
+#. Tooltip for 'Latch'
+msgid ""
+"Latch the brim if checked (the brim is captured with interface or raft "
+"paths).  Make sure the brim is at least 2 loops wide and at least 2 layers "
+"thick."
+msgstr "檢查邊緣至少2環寬，至少2層厚。"
+
+#. Widget
+msgid "Layer 1"
+msgstr "首層"
+
+#. Tooltip for 'Layer 1'
+msgid ""
+"Temperature of the extruder while extruding the first layer onto the bed.  "
+"Warm it up a bit for better stick."
+msgstr "首層列印溫度，通常高於主要溫度5~10度[C]"
+
+#. Widget
+msgid "Layer Control (in [mm] or [%])"
+msgstr "切層厚度設定"
+
+#. Tooltip for 'Layer Control (in [mm] or [%])'
+msgid ""
+"Units are in [mm], unless you add a % which makes it a percentage of "
+"Extrusion Width.<LF>E.g. '0.5' means 0.5 [mm].  '50%' means 1/2 extrusion "
+"width."
+msgstr "單位是 [mm] or [%]，是以擠出寬度作為基準."
+
+#. Widget
+msgid "Layer Thickness"
+msgstr "預設固定層厚"
+
+#. Tooltip for 'Layer Thickness'
+msgid ""
+"The thickness of each slice ('ply') of plastic extruded (minimum). This "
+"should be <= Extrusion Width"
+msgstr "以Z軸面做切層堆積。設定值應小於<=擠出寬度"
+
+#. Widget
+msgid "Length to Extrude [mm]"
+msgstr "擠出長度 [mm]"
+
+#. Tooltip for 'Length to Extrude [mm]'
+msgid ""
+"How much filament to drive...the extrusion needs to get to steady state."
+msgstr ""
+
+#. Menu Item
+msgid "License"
+msgstr "授權"
+
+#. Widget
+msgid "Limit Increase / Layer"
+msgstr "限制層高變換速度"
+
+#. Tooltip for 'Limit Increase / Layer'
+msgid "The 1st layer max speed limit will increase by this amount every layer"
+msgstr "限制層變換時的最大速度，單位是mm/s"
+
+#. Widget
+msgid "Linked Materials"
+msgstr "連結材料"
+
+#. Widget
+msgid "Linked Styles"
+msgstr "連結樣式"
+
+#. Widget
+msgid "Linked Supports"
+msgstr "連結支撐"
+
+#. Widget
+msgid "Load Image"
+msgstr "載入圖檔"
+
+#. Menu Item
+msgid "Load Project / G-code Settings @>>"
+msgstr "載入專案 / G-code設定"
+
+#. Widget
+msgid "Load Values"
+msgstr "載入數值"
+
+#. Tooltip for 'Load Values'
+msgid ""
+"Use the extruder and loaded material settings from the relevant  KISSlicer "
+"profiles."
+msgstr ""
+
+#. Menu Item
+msgid "Load a Language File"
+msgstr "載入語系檔"
+
+#. Menu Item
+msgid "Load multiple STLs into a single model"
+msgstr "多個STL同時載入單模型"
+
+#. Widget
+msgid "Lock<LF>Paths"
+msgstr "鎖定LF>路徑"
+
+#. Tooltip for 'Lock<LF>Paths'
+msgid "Lock the most recent paths to preserve style. (PRO only)"
+msgstr ""
+
+#. Widget
+msgid "Log Box"
+msgstr "日誌盒子"
+
+#. Tooltip for 'Log Box'
+msgid "Shows predicted print stats"
+msgstr ""
+
+#. Widget
+msgid "Loop / Solid Infill Overlap"
+msgstr "表面循環圈與填充重疊量"
+
+#. Tooltip for 'Loop / Solid Infill Overlap'
+msgid ""
+"Controls how much the solid and sparse infill overlap the innermost loop (0 "
+"for just touching, 1.0 for maximum overlap...too much will look bad on solid "
+"prints, or near flat  surfaces)"
+msgstr "設定表面內圈與誤剪填充的交疊量（0為僅接觸，1.0為完全重疊）"
+
+#. Widget
+msgid "Loop Order"
+msgstr "打印表面順序"
+
+#. Tooltip for 'Loop Order'
+msgid ""
+"Perimeter 1st gives the best dimensions, but worst outward slope. Loop1 then "
+"Perim is a good compromise between dimensional accuracy and overhangs.  "
+"Perimeter Last will do the best with outward slopes, but has the least "
+"dimensional accuracy."
+msgstr ""
+"Perimeter 1st 物件精度表現最優，但表面紋路表現最差. Loop1 > Perim 物件精度&表"
+"面紋路取得最佳平. Perimeter Last 表面紋路表現最優，但物件精度表現最差."
+
+#. Menu Item
+msgid "Loop Path"
+msgstr "表面循環內圈路徑"
+
+#. Widget
+msgid "Loops"
+msgstr "表面"
+
+#. Tooltip for 'Loops'
+msgid ""
+"While extruding Loops, Perimeter, and Crowning set the fan to this Duty "
+"Cycle %"
+msgstr "列印輪廓內外圈時的風扇設定，單位是[%]"
+
+#. Menu Item
+msgid "Lower Mesh in Z"
+msgstr ""
+
+#. Menu Item
+msgid "M101/3"
+msgstr ""
+
+#. Menu Item
+msgid ""
+"MULTI-EXTRUDER - Different extruders can be selected for each major function "
+"(Object, Raft, Support, object-support Interface) on the [Ext Map] settings "
+"tab, and for each object or sub-mesh in the Mesh-to-Extruder Map ('All "
+"Models' menu, or right-click on object tab).<LF><LF>LOCK PATHS - Checking "
+"'Lock Paths' on a model's tab will retain its paths even when changing "
+"Styles or updating a setting in the Style profile, letting models be sliced "
+"with different Styles for the same print.<LF><LF>STACKED LAYERS - Stacking "
+"accumulates support and sparse infill paths, only printing them every N "
+"layers for a faster print.  Currently Stacking is disabled when Stepover-"
+"controlled (adaptive) layers are used.<LF><LF>OVERSAMPLE RESOLUTION - The "
+"models' geometry is stored internally in an oversampled data structure.  The "
+"finer this number the smaller details can be resolved, at the cost of slower "
+"slicing and increased RAM usage."
+msgstr ""
+
+#. Widget
+msgid "Main"
+msgstr "固定"
+
+#. Tooltip for 'Main'
+msgid "Temperature of the extruder while extruding"
+msgstr "打印時要使用的噴頭溫度"
+
+#. Widget
+msgid "Main<LF>XYgap"
+msgstr "XY間隙"
+
+#. Tooltip for 'Main<LF>XYgap'
+msgid ""
+"Horizontal Gap between the support and the object in [mm] or in [% of "
+"Extrusion Width]"
+msgstr "支撐與物件XY間隙設定，單位 [mm]or擠出寬度[%]."
+
+#. Widget
+msgid "Make Solid"
+msgstr "表面支撐"
+
+#. Tooltip for 'Make Solid'
+msgid ""
+"Make all the interface section solid if checked.  (50% dense if unchecked.)"
+msgstr "啟用實體的支撐介面。"
+
+#. Widget
+msgid "Many Parts"
+msgstr ""
+
+#. Tooltip for 'Many Parts'
+msgid "Many parts can share a single Prime Pillar"
+msgstr ""
+
+#. Menu Item
+msgid "Map the hollow spaces as 'Void'"
+msgstr ""
+
+#. Widget
+msgid "Mark Path Start/Stop"
+msgstr ""
+
+#. Tooltip for 'Mark Path Start/Stop'
+msgid ""
+"Some firmware types use M101/3 or G10/1 to trigger destring.  Note: this is "
+"forced to M101/3 internally for BfB printers"
+msgstr ""
+
+#. Menu Item
+msgid "Material"
+msgstr ""
+
+#. Widget
+msgid "Material<LF>Family"
+msgstr ""
+
+#. Tooltip for 'Material<LF>Family'
+msgid "Select the (closest) material family"
+msgstr "選擇材料系列"
+
+#. Menu Item
+msgid "Material Change Warning (if > 1 extruder)"
+msgstr "材質更換時警告 (如果擠出機>1)"
+
+#. Widget
+msgid "Material G-code Token <MATL>"
+msgstr "材質G碼<MATL>"
+
+#. Tooltip for 'Material G-code Token <MATL>'
+msgid ""
+"This G-code will replace the token <MATL> in any G-code include, use it to "
+"provice custom per-material G-code"
+msgstr "在此欄位的G碼將代替任何地方的材質G碼"
+
+#. Widget
+msgid "Material Name"
+msgstr "描述檔"
+
+#. Tooltip for 'Material Name'
+msgid "Selected Material profile"
+msgstr "選擇材料描述檔"
+
+#. Widget
+msgid "Material Name Hint"
+msgstr "提示材料名稱"
+
+#. Widget
+msgid "Material Profile Name"
+msgstr "材料描述檔名稱"
+
+#. Tooltip for 'Material Profile Name'
+msgid ""
+"Select the name to save the profile.  It will turn red if the profile name "
+"is invalid or already in use."
+msgstr "選擇名稱存檔，如果配置文件名稱無效或已經使用，將變成紅色。"
+
+#. Widget
+msgid "Material Profile Wizard"
+msgstr "建立材料描述檔"
+
+#. Menu Item
+msgid "Material Wizard"
+msgstr "建立材料"
+
+#. Widget
+msgid "Matl"
+msgstr "材料"
+
+#. Widget
+msgid "Max"
+msgstr "最大"
+
+#. Tooltip for 'Max'
+msgid ""
+"Maximum thickness of each slice ('ply') of plastic extruded when trying to "
+"match Stepover control.  Set to 0 for no Stepover control"
+msgstr "如果最大層厚度大於規則層厚度，則自動啟用自適應層。0=禁用"
+
+#. Widget
+msgid "Max Nodes / s"
+msgstr ""
+
+#. Tooltip for 'Max Nodes / s'
+msgid ""
+"How many G-code nodes (points along a path) can the board process per "
+"second?  0 disables the limit, otherwise paths will be slowed as needed.  "
+"For Serial links try baud / 1600"
+msgstr ""
+
+#. Widget
+msgid "Max [mm^3/s]"
+msgstr "最大 [mm^3/s]"
+
+#. Tooltip for 'Max [mm^3/s]'
+msgid ""
+"Limit the Extruder to not deliver material above this volumetric flow rate "
+"(path thickness * width * head_speed) by slowing down both the head speed "
+"and the flow rate if necessary."
+msgstr "根據列印速度減少，限制擠出材料流動不能高於此設定值."
+
+#. Widget
+msgid "Mesh Error Key"
+msgstr ""
+
+#. Widget
+msgid "Min Jump[mm]"
+msgstr "抹除觸發距離"
+
+#. Tooltip for 'Min Jump[mm]'
+msgid ""
+"Any jump < this threshold will not wipe (or destring on 5D), so 0 would "
+"never disable a destring/wipe"
+msgstr "小於這個設定值的路徑不啟用抹除"
+
+#. Widget
+msgid "Min Layer [s]"
+msgstr "單層時間 [s]"
+
+#. Tooltip for 'Min Layer [s]'
+msgid "If a layer would have been quicker than this, the layer is slowed down"
+msgstr "如果單層列印時間少於該值，則速度將自動下降"
+
+#. Widget
+msgid "Min Segment<LF>Length [mm]"
+msgstr "XY單步距離"
+
+#. Tooltip for 'Min Segment<LF>Length [mm]'
+msgid ""
+"Some printers drop segments shorter than a threshold.  This will allow "
+"KISSlicer to output a path using printable segments.  A good starting value "
+"is the XY step resolution * 2."
+msgstr "打印機的XY軸每單位值動的分辨率，單位[mm]。（用於分配最小段落長度）"
+
+#. Widget
+msgid "Min [mm^3/s]"
+msgstr "最小 [mm^3/s]"
+
+#. Tooltip for 'Min [mm^3/s]'
+msgid ""
+"Limit the Extruder to not deliver material below this volumetric flow rate "
+"(path thickness * width * head_speed) by speeding up both the head speed and "
+"the flow rate if necessary."
+msgstr "根據列印速度減少，限制擠出材料流動不能少於此設定值."
+
+#. Widget
+msgid "Minutes to reach temp."
+msgstr ""
+
+#. Tooltip for 'Minutes to reach temp.'
+msgid "Time in minutes it took to reach that setpoint"
+msgstr ""
+
+#. Menu Item
+msgid "Mirror X axis"
+msgstr "鏡射X軸"
+
+#. Menu Item
+msgid "Mirror Y axis"
+msgstr "鏡射Y軸"
+
+#. Menu Item
+msgid "Mirror Z axis"
+msgstr "鏡射Z軸"
+
+#. Widget
+msgid "Misc."
+msgstr "雜項"
+
+#. Widget
+msgid "Mode"
+msgstr "模式"
+
+#. Tooltip for 'Mode'
+msgid ""
+"Sheathed Support has a perimeter around the sparse support base.  This "
+"strengthes the base support, but is very hard to remove if support is "
+"*inside* a complex model."
+msgstr "加強支撐強度，缺點是不好拆拔."
+
+#. Menu Item
+msgid "Model"
+msgstr "模型"
+
+#. Menu Item
+msgid "Model Tab Order<LF>    (all objects at the same time, unsorted)"
+msgstr "依照模型標籤排序同時列印"
+
+#. Widget
+msgid "Models"
+msgstr "模型"
+
+#. Tooltip for 'Models'
+msgid "Shows only the 3D models"
+msgstr "僅顯示3D模型"
+
+#. Widget
+msgid "Models+Paths"
+msgstr "模型+路徑"
+
+#. Tooltip for 'Models+Paths'
+msgid "Shows the models as transparent, with a layer's paths inside"
+msgstr "顯示半透明物件模型+切層路徑"
+
+#. Widget
+msgid "Multiple Object<LF>Print Order"
+msgstr "多個物件<LF>打印順序"
+
+#. Tooltip for 'Multiple Object<LF>Print Order'
+msgid "Select if all objects are printed simultaneously."
+msgstr "選擇全部物件同時列印."
+
+#. Widget
+msgid "N [*]<LF>Layers"
+msgstr ""
+
+#. Tooltip for 'N [*]<LF>Layers'
+msgid "This G-code is inserted after every N layers"
+msgstr ""
+
+#. Menu Item
+msgid "No"
+msgstr "沒有"
+
+#. Widget
+msgid "No G-code saved yet."
+msgstr "還沒儲存G-code."
+
+#. Menu Item
+msgid "No filename was given."
+msgstr "沒有文件名."
+
+#. Menu Item
+msgid "No models to save."
+msgstr ""
+
+#. Menu Item
+msgid "No paths to save."
+msgstr ""
+
+#. Menu Item
+msgid "No valid filename(s) specified"
+msgstr ""
+
+#. Menu Item
+msgid "No, just prepend"
+msgstr ""
+
+#. Menu Item
+msgid "No, leave the current settings"
+msgstr "不，保留當前設定"
+
+#. Widget
+msgid "Noise Preview"
+msgstr "初步預覽"
+
+#. Widget
+msgid "Noise Wizard"
+msgstr ""
+
+#. Menu Item
+msgid "None"
+msgstr "無"
+
+#. Widget
+msgid "Note: this mapping is saved with Printer profile"
+msgstr "注意:此對應與列印機描述檔一起存檔"
+
+#. Widget
+msgid "Notes"
+msgstr "註釋"
+
+#. Tooltip for 'Notes'
+msgid "Store whatever notes you wish"
+msgstr "保存你所需要的註釋文字"
+
+#. Widget
+msgid "NozDia1"
+msgstr ""
+
+#. Tooltip for 'NozDia1'
+msgid "Nozzle diameter in [mm]."
+msgstr ""
+
+#. Widget
+msgid "NozDia2"
+msgstr ""
+
+#. Widget
+msgid "NozDia3"
+msgstr ""
+
+#. Widget
+msgid "NozDia4"
+msgstr ""
+
+#. Widget
+msgid "NozLen1"
+msgstr ""
+
+#. Tooltip for 'NozLen1'
+msgid ""
+"Nozzle throat length in [mm].  (Most older style nozzles will be ~= nozzle "
+"diameter * 2, newer ones may be down around 1.25 x)"
+msgstr ""
+
+#. Widget
+msgid "NozLen2"
+msgstr ""
+
+#. Widget
+msgid "NozLen3"
+msgstr ""
+
+#. Widget
+msgid "NozLen4"
+msgstr ""
+
+#. Widget
+msgid "Nozzle Bore Length"
+msgstr ""
+
+#. Tooltip for 'Nozzle Bore Length'
+msgid "The length of the bore hole (at the nozzle diameter)"
+msgstr ""
+
+#. Widget
+msgid "Nozzle Dia [mm]"
+msgstr ""
+
+#. Tooltip for 'Nozzle Dia [mm]'
+msgid "Size of the hole in the tip of the nozzle"
+msgstr ""
+
+#. Widget
+msgid "Nozzle Diameter [mm]"
+msgstr "噴頭直徑 [mm]"
+
+#. Tooltip for 'Nozzle Diameter [mm]'
+msgid ""
+"The nozzle used determines the best extrusion width for the interface "
+"material, depending on if the support material is the same as the object "
+"material."
+msgstr ""
+
+#. Widget
+msgid "Nozzle Diameter [mm]<LF>(used for extrusion width)"
+msgstr ""
+
+#. Tooltip for 'Nozzle Diameter [mm]<LF>(used for extrusion width)'
+msgid ""
+"The nozzle used determines the best extrusion width and the layer "
+"thicknesses that the printer can reliably print."
+msgstr ""
+
+#. Widget
+msgid "Nozzle Length [mm]"
+msgstr "噴頭長度 [mm]"
+
+#. Tooltip for 'Nozzle Length [mm]'
+msgid "Throat length of the nozzle bore (often ~ 2 * nozzle diameter)"
+msgstr ""
+
+#. Widget
+msgid "Num Loops"
+msgstr "表面循環圈"
+
+#. Tooltip for 'Num Loops'
+msgid ""
+"The number of path loops around the perimeter.  Fractional values will "
+"periodically insert an extra loop for added bond strength."
+msgstr "物件表面的厚度，以圈數表示。通常實際表面厚度為噴頭口徑*表面圈數."
+
+#. Widget
+msgid "Number of Extruders"
+msgstr "擠出機數量"
+
+#. Tooltip for 'Number of Extruders'
+msgid "The number of Extruders on this printer"
+msgstr "印表機的擠出機數量"
+
+#. Menu Item
+msgid "OK"
+msgstr "確認"
+
+#. Menu Item
+msgid "OK, and disable this warning"
+msgstr "確認，並禁止警告"
+
+#. Menu Item
+msgid "Octagonal"
+msgstr "八角蜂巢狀"
+
+#. Widget
+msgid "Octave Gain"
+msgstr "八度增益"
+
+#. Tooltip for 'Octave Gain'
+msgid "1 = noisiest, 0 - smoothest"
+msgstr "1 = 雜點, 0 - 滑順"
+
+#. Menu Item
+msgid "Off"
+msgstr "關閉"
+
+#. Widget
+msgid "Ooze Density [g/cm^3]"
+msgstr ""
+
+#. Tooltip for 'Ooze Density [g/cm^3]'
+msgid "Density of the material [g/cm^3]"
+msgstr ""
+
+#. Widget
+msgid "Ooze Diameter [mm]"
+msgstr ""
+
+#. Tooltip for 'Ooze Diameter [mm]'
+msgid "Diameter of the ooze"
+msgstr ""
+
+#. Widget
+msgid "Ooze Length [mm]"
+msgstr ""
+
+#. Tooltip for 'Ooze Length [mm]'
+msgid "Length of the ooze"
+msgstr ""
+
+#. Widget
+msgid "Ooze Mass [g]"
+msgstr ""
+
+#. Tooltip for 'Ooze Mass [g]'
+msgid "Mass of the ooze that was extruderd after the extruder stopped."
+msgstr ""
+
+#. Menu Item
+msgid "Open STL Model(s)"
+msgstr "加入STL模型"
+
+#. Menu Item
+msgid "Opening the QuickStart PDF failed."
+msgstr ""
+
+#. Widget
+msgid "Optional / Advanced Settings"
+msgstr ""
+
+#. Menu Item
+msgid "Orange"
+msgstr "橘色"
+
+#. Widget
+msgid "Origin in the Center"
+msgstr "XY零點設於中心"
+
+#. Tooltip for 'Origin in the Center'
+msgid "The origin is at the center of the bed"
+msgstr "(0,0)設於平台中心"
+
+#. Widget
+msgid "Other        "
+msgstr "其他 "
+
+#. Widget
+msgid "Oversample Resolution [mm]"
+msgstr ""
+
+#. Tooltip for 'Oversample Resolution [mm]'
+msgid ""
+"KISSlicer's internal model representation will have at least this resolution"
+msgstr ""
+
+#. Widget
+msgid "PRO"
+msgstr "進階"
+
+#. Widget
+msgid "Parameter to Tune"
+msgstr "參數調整"
+
+#. Widget
+msgid "Parameter-Specific Help"
+msgstr ""
+
+#. Widget
+msgid "Path Color Key"
+msgstr "路徑顏色對照"
+
+#. Tooltip for 'Path Color Key'
+msgid "key window"
+msgstr "視窗對照"
+
+#. Menu Item
+msgid "Path Type"
+msgstr "路徑類型"
+
+#. Widget
+msgid "Path Type Selector"
+msgstr "路徑類型選擇"
+
+#. Tooltip for 'Path Type Selector'
+msgid "Selects how path lines are colored"
+msgstr "選擇路徑顏色對應"
+
+#. Widget
+msgid "Path%"
+msgstr "路徑%"
+
+#. Tooltip for 'Path%'
+msgid "Show the layer's paths in process"
+msgstr ""
+
+#. Widget
+msgid "Paths"
+msgstr "路徑"
+
+#. Tooltip for 'Paths'
+msgid "Shows only a single layer's paths, with an orthogonal projection"
+msgstr ""
+
+#. Widget
+msgid "Pause<LF>&& Res"
+msgstr ""
+
+#. Tooltip for 'Pause<LF>&& Res'
+msgid "This G-code is used any time a pause it triggered"
+msgstr ""
+
+#. Widget
+msgid "Pause [s]"
+msgstr "暫停 [s]"
+
+#. Tooltip for 'Pause [s]'
+msgid ""
+"How long to wait for the ooze to finish?  120s for most materials, longer "
+"for TPU or Nylon-like materials."
+msgstr ""
+
+#. Widget
+msgid "Pause after<LF>each Void"
+msgstr ""
+
+#. Tooltip for 'Pause after<LF>each Void'
+msgid ""
+"Pause after printing the top layer containing a Void sub-mesh.  This allows "
+"for inserting objects mid print."
+msgstr ""
+
+#. Widget
+msgid "Pause after Z: manual entry"
+msgstr "動作輸入Z軸暫停高度"
+
+#. Tooltip for 'Pause after Z: manual entry'
+msgid ""
+"Pause after these Z heights.  Per-session only, the info is not saved.  "
+"Values are whitespace or newline delimited."
+msgstr "在設定這些Z層高做暫停指令。使用空格或換行做設定值。"
+
+#. Menu Item
+msgid "Perimeter Path"
+msgstr "表面外圈路徑"
+
+#. Menu Item
+msgid "Perspective View"
+msgstr "透視預覽"
+
+#. Widget
+msgid "Physical<LF>RAM [MB]"
+msgstr "記憶體容量"
+
+#. Tooltip for 'Physical<LF>RAM [MB]'
+msgid "Total physical RAM in the system"
+msgstr "系統記憶體"
+
+#. Menu Item
+msgid "Pillar Path"
+msgstr "支柱路徑"
+
+#. Widget
+msgid "Place X"
+msgstr "放置X"
+
+#. Tooltip for 'Place X'
+msgid "X placement of all packed models on the bed"
+msgstr "將所有模型對齊X軸位置"
+
+#. Widget
+msgid "Place Y"
+msgstr ""
+
+#. Tooltip for 'Place Y'
+msgid "Y placement of all packed models on the bed"
+msgstr "將所有模型對齊Y軸位置"
+
+#. Menu Item
+msgid "Plastic"
+msgstr ""
+
+#. Menu Item
+msgid "Please allow the G-code export to finish before exiting."
+msgstr ""
+
+#. Menu Item
+msgid "Please allow the slicing to finish before exiting."
+msgstr ""
+
+#. Menu Item
+msgid ""
+"Please make sure to select a Printer Profile from the settings tabs below."
+"<LF>Happy Slicing!"
+msgstr ""
+
+#. Menu Item
+msgid "Please select a valid printer."
+msgstr ""
+
+#. Menu Item
+msgid "Please select a valid style."
+msgstr ""
+
+#. Widget
+msgid "Post<LF>fix"
+msgstr ""
+
+#. Tooltip for 'Post<LF>fix'
+msgid "This G-code is appended to the end of the G-code output"
+msgstr ""
+
+#. Widget
+msgid "Post-Process"
+msgstr ""
+
+#. Tooltip for 'Post-Process'
+msgid ""
+"Invoke a post-process script on <FILE>.<LF>You can optionally use the token "
+"<KSPATH>."
+msgstr ""
+
+#. Widget
+msgid "Pre<LF>fix"
+msgstr ""
+
+#. Tooltip for 'Pre<LF>fix'
+msgid "This G-code is prepended to the G-code output"
+msgstr ""
+
+#. Widget
+msgid "Pre-<LF>heat"
+msgstr ""
+
+#. Tooltip for 'Pre-<LF>heat'
+msgid ""
+"Used to preheat an extruder before switching to it.  This is called twice, "
+"first with the extruder to be preheated, then again with the current "
+"extruder."
+msgstr ""
+
+#. Widget
+msgid "Precision<LF>(vs. Speed)"
+msgstr "列印速度<LF>調整拉桿"
+
+#. Menu Item
+msgid "Preferences"
+msgstr "選項"
+
+#. Widget
+msgid "Preheat"
+msgstr "預熱"
+
+#. Tooltip for 'Preheat'
+msgid ""
+"What preheat strategy should KISSlicer take with this material?<LF>Off = no "
+"preheating<LF>Safe = preheat after path<LF>Early = preheat before "
+"path<LF>Mid-Path = preheat can begin even during extrusion"
+msgstr ""
+"預熱策略<LF>Off = 無預熱<LF>Safe = 路徑後的預熱<LF>Early = 路徑前的預熱"
+"<LF>Mid-PATH = 邊擠出邊預熱"
+
+#. Widget
+msgid "Preload"
+msgstr "預載"
+
+#. Tooltip for 'Preload'
+msgid "Preload in [mm] at a flow rate of 1 mm^3/s"
+msgstr ""
+
+#. Menu Item
+msgid ""
+"PreloadVE Coefficient [microseconds]<LF>(0 - 2x Experimental Wizard "
+"value)<LF><LF>The printer profile *must* have valid values under [Printer]-"
+">[Extruder Hardware] for NozDia, NozLen, and DrvLen.<LF><LF>The model is a "
+"25 mm cube with rounded vertical corners. The Style has 2 loops (perim 1st), "
+"0 skin, 20% infill, 0 Seam Depth and Gap, Join-Loop Off, and fixed layer "
+"thickness ~= NozDia / 2.<LF><LF>There should be no Prime Pillar or Wall. "
+"Destring is disabled for this test.<LF><LF>The ideal PreloadVE value will be "
+"slightly different for thin vs thick layers, so tune it in the center of "
+"your desired layer thickness range."
+msgstr ""
+
+#. Widget
+msgid "PreloadVE [µs]"
+msgstr "預擠材料黏彈性"
+
+#. Tooltip for 'PreloadVE [µs]'
+msgid ""
+"Preload ViscoElasticity, in units of [microseconds], computed as:<LF>1e6 "
+"[microseconds/s] * Viscosity [Pa*s] / Elasticity [Pa]"
+msgstr ""
+"預擠材料黏彈性單位為[微渺]計算。計算:1e6 [微秒/s]*材料黏度[Pa*s]/彈性[Pa]"
+
+#. Menu Item
+msgid "Preview On Open STL"
+msgstr "開啟STL時預覽物件"
+
+#. Widget
+msgid "Prime Pillar / Wall"
+msgstr "散熱柱Pillar / 輪廓外牆Wall"
+
+#. Tooltip for 'Prime Pillar / Wall'
+msgid ""
+"The Prime Skirt / Wall adds a small wall around each part, good for cooling "
+"small parts, priming extruders every layer (especially for multi-head "
+"prints), and for sequential printing."
+msgstr "散熱柱/輪廓外牆是在物件周圍增加一個小牆壁，有利於小物件冷卻。"
+
+#. Menu Item
+msgid "Prime Pillar Path"
+msgstr "散熱柱/側裙/外牆 路徑"
+
+#. Widget
+msgid "Print Temperature [C]"
+msgstr "列印溫度 [C]"
+
+#. Tooltip for 'Print Temperature [C]'
+msgid "Temperature for extruding"
+msgstr "擠出時的溫度"
+
+#. Widget
+msgid "Print Type - % Infill (other features)"
+msgstr ""
+
+#. Widget
+msgid "Printer"
+msgstr "列印機"
+
+#. Widget
+msgid "Printer Name"
+msgstr "列印機名稱"
+
+#. Tooltip for 'Printer Name'
+msgid "Selected Printer profile"
+msgstr ""
+
+#. Widget
+msgid "Printer Name Hint"
+msgstr ""
+
+#. Widget
+msgid "Printer Profile"
+msgstr "列印機描述檔"
+
+#. Tooltip for 'Printer Profile'
+msgid "Quick-select the Printer profile"
+msgstr "快速列印機描述檔"
+
+#. Widget
+msgid "Printer Profile Name"
+msgstr "列印機描述檔名稱"
+
+#. Widget
+msgid "Printer Profile Wizard"
+msgstr "建立列印機描述檔"
+
+#. Menu Item
+msgid "Printer Wizard"
+msgstr "建立列印機"
+
+#. Menu Item
+msgid "Profile"
+msgstr "描述檔"
+
+#. Widget
+msgid "Profiles"
+msgstr "描述檔"
+
+#. Menu Item
+msgid "Project"
+msgstr "專案"
+
+#. Menu Item
+msgid "Quick Restore Reference Settings"
+msgstr "快速還原參考設定"
+
+#. Menu Item
+msgid "Quit KISSlicer"
+msgstr "離開 KISSlicer"
+
+#. Widget
+msgid "RAM [MB]<LF>Warning"
+msgstr "使用警告"
+
+#. Tooltip for 'RAM [MB]<LF>Warning'
+msgid ""
+"If the slicing operation *might* exceed this threshold, a warning will be "
+"shown"
+msgstr "切片時占用的記憶體上限"
+
+#. Widget
+msgid "Raft<LF>Type"
+msgstr "筏板<LF>類型"
+
+#. Tooltip for 'Raft<LF>Type'
+msgid "Select the style of raft desired, if any"
+msgstr "選擇筏板樣式"
+
+#. Widget
+msgid "Raft Ext"
+msgstr "筏板擠出機"
+
+#. Tooltip for 'Raft Ext'
+msgid "Extruder for printing the raft"
+msgstr "打印筏板預設擠出機"
+
+#. Widget
+msgid "Raft Grid Options (in [mm])"
+msgstr "筏板網格 [mm]"
+
+#. Widget
+msgid "Raft Int<LF>Layers"
+msgstr "筏板<LF>層數"
+
+#. Tooltip for 'Raft Int<LF>Layers'
+msgid ""
+"The number of interface layers to place on top of the raft (only if raft and "
+"support are enabled)"
+msgstr "筏板頂部的表面層數"
+
+#. Menu Item
+msgid "Raft Path"
+msgstr "筏板路徑"
+
+#. Widget
+msgid "Random Seed"
+msgstr ""
+
+#. Menu Item
+msgid "Reload from file(s)"
+msgstr ""
+
+#. Menu Item
+msgid "Remove"
+msgstr "移除"
+
+#. Menu Item
+msgid "Remove (all copies of) this model from the build"
+msgstr ""
+
+#. Widget
+msgid "Rename"
+msgstr "重新命名"
+
+#. Tooltip for 'Rename'
+msgid "Rename this profile"
+msgstr "將描述檔重新命名"
+
+#. Widget
+msgid "Reset"
+msgstr "重置"
+
+#. Tooltip for 'Reset'
+msgid "Reset the veiw to be centered on the build bed"
+msgstr ""
+
+#. Menu Item
+msgid "Restore original orientation"
+msgstr ""
+
+#. Menu Item
+msgid "Restrict Advanced Settings"
+msgstr "限制進階設定"
+
+#. Widget
+msgid "Results from Dimensions"
+msgstr ""
+
+#. Tooltip for 'Results from Dimensions'
+msgid "These ooze measurements must be > 0."
+msgstr ""
+
+#. Widget
+msgid "Results from Mass"
+msgstr ""
+
+#. Menu Item
+msgid "Reuse Latest (least time)"
+msgstr "套用最新(最近時間)"
+
+#. Menu Item
+msgid "Revert to English"
+msgstr "恢復英文顯示"
+
+#. Menu Item
+msgid "Revert to original height"
+msgstr "恢復到原始高度"
+
+#. Widget
+msgid ""
+"Right now, if Strength<LF>is non-0, all perimeters<LF>will have this "
+"noise<LF>pattern on them."
+msgstr ""
+
+#. Widget
+msgid "Rim Speed (Deltas)"
+msgstr ""
+
+#. Tooltip for 'Rim Speed (Deltas)'
+msgid "Speed of the head while not extruding."
+msgstr "不擠出時，噴頭移動路徑時的速度，單位是mm/s."
+
+#. Menu Item
+msgid ""
+"Rotate the part around the vertical axis<LF>(Set degrees directly or use "
+"buttons)"
+msgstr ""
+
+#. Menu Item
+msgid "Rough"
+msgstr "一般"
+
+#. Widget
+msgid "Round"
+msgstr "圓形"
+
+#. Tooltip for 'Round'
+msgid "The print bed is round"
+msgstr "列印平台是圓形"
+
+#. Menu Item
+msgid "Rounded"
+msgstr "八角圓形狀"
+
+#. Menu Item
+msgid "Run All 4 Profile Wizards"
+msgstr "同時建立4個描述檔"
+
+#. Menu Item
+msgid "Running the post process command:<LF><LF>%s<LF><LF>Failed, returning %i"
+msgstr ""
+
+#. Widget
+msgid "SDF"
+msgstr ""
+
+#. Menu Item
+msgid "STL save failed."
+msgstr "STL儲存失敗."
+
+#. Menu Item
+msgid "STL saved."
+msgstr "STL儲存."
+
+#. Menu Item
+msgid "Save Packed STL"
+msgstr "儲存模型"
+
+#. Menu Item
+msgid "Save Project As"
+msgstr "另存專案"
+
+#. Menu Item
+msgid "Save Reference Language File"
+msgstr "儲存參考語系檔"
+
+#. Widget
+msgid "Save Test G-code"
+msgstr "選擇測試G-code"
+
+#. Menu Item
+msgid "Save canceled."
+msgstr "取消存檔."
+
+#. Menu Item
+msgid "Save failed."
+msgstr ""
+
+#. Menu Item
+msgid ""
+"Saved '%s'.  You can use standard<LF>gettext tools (like Poedit) to generate "
+"a .po file."
+msgstr ""
+
+#. Menu Item
+msgid "Scale X/Y/Z"
+msgstr ""
+
+#. Widget
+msgid "Scale [mm]"
+msgstr ""
+
+#. Tooltip for 'Scale [mm]'
+msgid "Physical scale to apply the texture"
+msgstr ""
+
+#. Menu Item
+msgid "Scale by X"
+msgstr ""
+
+#. Widget
+msgid "Seam Depth"
+msgstr "接縫深度"
+
+#. Tooltip for 'Seam Depth'
+msgid "Depth scale of the seam crossover"
+msgstr "接縫深度程度"
+
+#. Widget
+msgid "Seam Gap"
+msgstr "接縫間隙"
+
+#. Tooltip for 'Seam Gap'
+msgid "Gap on loops: 0 is the theoretical ideal (with preload tuned)."
+msgstr "表面起始點與結束點間隔縫隙."
+
+#. Widget
+msgid "Seam Hiding"
+msgstr "隱藏表面接縫"
+
+#. Widget
+msgid "Select<LF>New Ext<LF>&& Warm"
+msgstr ""
+
+#. Tooltip for 'Select<LF>New Ext<LF>&& Warm'
+msgid ""
+"This G-code is inserted when a new extruder is selected (and usually warmed "
+"up)"
+msgstr ""
+
+#. Widget
+msgid "Select a Mesh, then Set Extruder"
+msgstr ""
+
+#. Menu Item
+msgid "Sequential<LF>    (one object at a time, short to tall)"
+msgstr "物件順序列印"
+
+#. Widget
+msgid "Sequential Pack Style"
+msgstr "打印順序樣式"
+
+#. Tooltip for 'Sequential Pack Style'
+msgid "Pick how the objects are packed when printing sequentially."
+msgstr "選擇打印的順序方式."
+
+#. Widget
+msgid "Set"
+msgstr "設定"
+
+#. Widget
+msgid "Set % Infill"
+msgstr "填充百分比"
+
+#. Tooltip for 'Set % Infill'
+msgid "A simple wizard to set any desired infill percentage."
+msgstr "手動輸入填充百分比."
+
+#. Widget
+msgid "Set Extruder"
+msgstr "設定擠出機"
+
+#. Widget
+msgid "Set in"
+msgstr ""
+
+#. Widget
+msgid "Settings Level"
+msgstr "切片模式"
+
+#. Tooltip for 'Settings Level'
+msgid ""
+"Select your experience level...setings more advanced than this will be "
+"disabled"
+msgstr ""
+
+#. Widget
+msgid "Shake"
+msgstr ""
+
+#. Tooltip for 'Shake'
+msgid ""
+"At the end of the prime, move the nozzle quickly to one side and back.  This "
+"is intended to be used on printers that can not beep."
+msgstr ""
+
+#. Widget
+msgid "Sheathe"
+msgstr "支撐護套"
+
+#. Menu Item
+msgid "Show Command Line Options"
+msgstr "顯示命令行選項"
+
+#. Menu Item
+msgid "Show Extruder Map Window"
+msgstr "顯示擠出機對應視窗"
+
+#. Menu Item
+msgid "Show Extrusion Time Map"
+msgstr "顯示擠出機時間對應"
+
+#. Menu Item
+msgid "Show Mesh Error Key"
+msgstr "顯示網格錯誤對照表"
+
+#. Menu Item
+msgid "Show Path Color Key"
+msgstr "顯示路徑顏色對照表"
+
+#. Menu Item
+msgid "Show Quickstart Guide"
+msgstr "顯示快速使用手冊"
+
+#. Widget
+msgid "Show Settings"
+msgstr "顯示設定"
+
+#. Tooltip for 'Show Settings'
+msgid "Show the settings tabs"
+msgstr "顯示設定頁面"
+
+#. Menu Item
+msgid "Show mesh-to-extruder map"
+msgstr ""
+
+#. Widget
+msgid "Show this extruder map when a<LF>model tile is selected."
+msgstr ""
+
+#. Widget
+msgid "Show this key automatically<LF>if a model has errors."
+msgstr ""
+
+#. Widget
+msgid "Show this time map whenever G-code is saved."
+msgstr ""
+
+#. Widget
+msgid "Shrink%xy"
+msgstr "XY%收縮"
+
+#. Tooltip for 'Shrink%xy'
+msgid "How much will the model shrink in  X & Y after cooling"
+msgstr "冷卻後XY軸向的模型收縮率"
+
+#. Menu Item
+msgid "Simultaneous<LF>    (all objects at the same time, sorted)"
+msgstr "同時打印所有物件"
+
+#. Widget
+msgid "Single part's reported cm^3"
+msgstr "單一物件的報告cm^3"
+
+#. Tooltip for 'Single part's reported cm^3'
+msgid "After slicing the part, KISSlicer will report the extruded cm^3"
+msgstr "切片後，KISSlicer將會報告擠出的cm^3"
+
+#. Widget
+msgid "Single part's weight"
+msgstr "單一物件重量"
+
+#. Tooltip for 'Single part's weight'
+msgid ""
+"You will need to weight the part, raft and all...use the same units as for "
+"the entire spool"
+msgstr "你將需要計算物件、筏板、支撐....使用與整個線軸相同的重量單位"
+
+#. Widget
+msgid "Size 2^N"
+msgstr ""
+
+#. Menu Item
+msgid ""
+"Size: %1.1f x %1.1f x %1.1f [mm]<LF>Area: %1.1f [cm^2]<LF>Volume %1.1f "
+"[cm^3]<LF><LF>Right-click for more functions"
+msgstr ""
+
+#. Widget
+msgid "Skin Thickness [mm]"
+msgstr "表面頂底"
+
+#. Tooltip for 'Skin Thickness [mm]'
+msgid ""
+"Will make the solid skin of the model this thick (all surfaces: top, sides, "
+"bottom)"
+msgstr "物件上下表面的厚度，通常設定值為層厚的倍數，單位是[mm]"
+
+#. Widget
+msgid "Skirt / Brim"
+msgstr ""
+
+#. Tooltip for 'Skirt / Brim'
+msgid ""
+"Skirt primes the extruder on the first layer by placing a path around the "
+"entire object.  Brim adds a lip of plastic to the base layer of the part, "
+"helping hold it to the bed (reduce warp)."
+msgstr ""
+
+#. Menu Item
+msgid "Slice && Save (get filename before slice)"
+msgstr "切片與存檔 (切片前取得檔名)"
+
+#. Menu Item
+msgid "Slicing Canceled"
+msgstr "取消切片"
+
+#. Widget
+msgid "Slicing Threads"
+msgstr "切片使用核心數"
+
+#. Tooltip for 'Slicing Threads'
+msgid ""
+"Number of threads used to slice the model...must be between 1 and the number "
+"of cores.  Reduce this to lessen the CPU load, for example to fix USB "
+"connection issues when printing while slicing"
+msgstr "設定核心數使用1~N，啟用多核心以減少CPU負載"
+
+#. Menu Item
+msgid "Solid Path"
+msgstr "表面頂底路徑"
+
+#. Menu Item
+msgid ""
+"Some sub-meshes were inside out. This can happen<LF>when there is a hollow "
+"space ('void') inside the<LF>part, or it can be a mistake.  Should KISSlicer:"
+msgstr ""
+
+#. Menu Item
+msgid "Sparse Infill Path"
+msgstr "自動補償填充路徑"
+
+#. Widget
+msgid "Speed"
+msgstr "速度"
+
+#. Menu Item
+msgid "Stack vertically"
+msgstr "垂直堆疊"
+
+#. Widget
+msgid "Stacked Layers<LF>(Sparse Infill, Support)"
+msgstr "堆疊層<LF>(填充、支撐)"
+
+#. Tooltip for 'Stacked Layers<LF>(Sparse Infill, Support)'
+msgid ""
+"Sparse Infill and Support are extruded every N layers (making them Stacked "
+"Sparse Infill and Stacked Support...PRO only)"
+msgstr "填充與支撐每N層堆積一次(進階功能)"
+
+#. Menu Item
+msgid "Stacked Sparse Infill Path"
+msgstr "物件填充路徑"
+
+#. Menu Item
+msgid "Stop the current saving operation"
+msgstr ""
+
+#. Widget
+msgid "Store<LF>ViscoElasticity"
+msgstr ""
+
+#. Menu Item
+msgid "Straight"
+msgstr "直線交叉狀"
+
+#. Widget
+msgid "Strength"
+msgstr ""
+
+#. Tooltip for 'Strength'
+msgid ""
+"0 is off, no noise texture, 1 is full strength.  Affects actual usage, not "
+"the data or display"
+msgstr ""
+
+#. Widget
+msgid "Stride"
+msgstr "間距"
+
+#. Tooltip for 'Stride'
+msgid "Spacing for Interface paths"
+msgstr "表面支撐間距"
+
+#. Widget
+msgid "Style"
+msgstr "樣式"
+
+#. Widget
+msgid "Style<LF>Support<LF>Printer<LF>Materials"
+msgstr "樣式<LF>支撐<LF>列印機<LF>材料"
+
+#. Widget
+msgid "Style Name"
+msgstr "描述檔"
+
+#. Tooltip for 'Style Name'
+msgid "Selected Style profile"
+msgstr "選擇樣式描述檔"
+
+#. Widget
+msgid "Style Profile"
+msgstr "樣式描述檔"
+
+#. Tooltip for 'Style Profile'
+msgid "Quick-select the Style profile"
+msgstr "快速選擇樣式描述檔"
+
+#. Widget
+msgid "Style Profile Name"
+msgstr "樣式描述檔名稱"
+
+#. Widget
+msgid "Style Profile Wizard"
+msgstr "建立新樣式描述檔"
+
+#. Menu Item
+msgid "Style Wizard"
+msgstr "建立新樣式"
+
+#. Menu Item
+msgid "SublimeLayers"
+msgstr "白色"
+
+#. Widget
+msgid "Support"
+msgstr "支撐"
+
+#. Widget
+msgid "Support<LF>Z-Roof [mm]"
+msgstr "支撐上限"
+
+#. Tooltip for 'Support<LF>Z-Roof [mm]'
+msgid ""
+"No support will be generated above this height [mm].  Make < 0 to disable "
+"the limit.  Press Enter to preview the level."
+msgstr "限制支撐高度，在這個高度以上不會產生支撐路徑。設置<0則禁用。"
+
+#. Menu Item
+msgid "Support %1.0f [deg]"
+msgstr "支撐 %1.0f [度]"
+
+#. Menu Item
+msgid "Support (may Stack) Path"
+msgstr "支撐(疊加)路徑"
+
+#. Widget
+msgid "Support / Object Interface (in [mm])"
+msgstr "支撐 / 支撐表面 [mm]"
+
+#. Widget
+msgid "Support Angle"
+msgstr "支撐角度"
+
+#. Tooltip for 'Support Angle'
+msgid ""
+"Any surface of the model more than X degrees off vertical will get support."
+msgstr "物件表面與列印平台垂直度差異高於設定值則會建立支撐."
+
+#. Widget
+msgid "Support Ext"
+msgstr "支撐擠出機"
+
+#. Tooltip for 'Support Ext'
+msgid "Extruder for printing the main (lower) support"
+msgstr "打印主要支撐預設擠出機"
+
+#. Menu Item
+msgid "Support Interface Path"
+msgstr "表面支撐路徑"
+
+#. Widget
+msgid "Support Name"
+msgstr "描述檔"
+
+#. Tooltip for 'Support Name'
+msgid "Selected Support profile"
+msgstr "選擇支撐描述檔"
+
+#. Widget
+msgid "Support Profile"
+msgstr "支撐描述檔"
+
+#. Tooltip for 'Support Profile'
+msgid "Quick-select the Support profile"
+msgstr "快速支撐描述檔"
+
+#. Widget
+msgid "Support Profile Name"
+msgstr "支撐描述檔名稱"
+
+#. Widget
+msgid "Support Profile Wizard"
+msgstr "建立支撐描述檔"
+
+#. Widget
+msgid "Support Type"
+msgstr "支撐類型"
+
+#. Tooltip for 'Support Type'
+msgid ""
+"Same Material as Object tries to reduce adhesion by minimizing contact "
+"area<LF>Soluble Support generates a flat solid surface of a different "
+"material for best surface quality."
+msgstr ""
+
+#. Menu Item
+msgid "Support Wizard"
+msgstr "建立支撐"
+
+#. Menu Item
+msgid ""
+"TYPE: [mm/s], [mm^3/s]<LF>Perim:   %1.2f,  %1.1f<LF>Loops:   %1.2f,  "
+"%1.1f<LF>Solid:   %1.2f,  %1.1f<LF>Sparse:  %1.2f,  %1.1f"
+msgstr ""
+"類型: [速度], [加速度]<LF>外圈:   %1.1f,  %1.1f<LF>內圈:   %1.1f,  %1.1f<LF>"
+"頂底:   %1.1f,  %1.1f<LF>填充:   %1.1f,  %1.1f"
+
+#. Menu Item
+msgid ""
+"TYPE: [mm/s], [mm^3/s]<LF>Perim:   %1.2f,  %1.1f-%1.1f<LF>Loops:   %1.2f,  "
+"%1.1f-%1.1f<LF>Solid:   %1.2f,  %1.1f-%1.1f<LF>Sparse:  %1.2f,  %1.1f-%1.1f"
+msgstr ""
+"類型: [速度], [加速度]<LF>外圈:   %1.1f,  %1.1f-%1.1f<LF>內圈:   %1.1f,  "
+"%1.1f-%1.1f<LF>頂底:   %1.1f,  %1.1f-%1.1f<LF>填充:   %1.1f,  %1.1f-%1.1f"
+
+#. Widget
+msgid "Temperature [C]"
+msgstr "溫度 [C]"
+
+#. Tooltip for 'Temperature [C]'
+msgid "Temperature for extrusion."
+msgstr "噴頭溫度."
+
+#. Widget
+msgid "Temperature [C] for the <TEMP> token"
+msgstr "設定噴頭/熱床/熱場列印溫度"
+
+#. Widget
+msgid "Test Parameters"
+msgstr "測試參數"
+
+#. Menu Item
+msgid "The Key is too short.<LF><LF>%s"
+msgstr "金鑰太短。<LF><LF>%s"
+
+#. Menu Item
+msgid ""
+"The Key should be in the form:<LF>XXXXX-your_name-XXXXX<LF>(The Key is not "
+"case sensitive.)"
+msgstr ""
+
+#. Menu Item
+msgid "The following INI files are not present (using defaults):"
+msgstr ""
+
+#. Widget
+msgid ""
+"The material's viscoelasticity<LF>is the ratio of the viscosity "
+"to<LF>elasticity.  The units work out<LF>to be seconds.  We use [µs]."
+"<LF><LF>NOTE: This is an initial value.<LF>Refine it in the Tuning Wizard."
+msgstr ""
+
+#. Menu Item
+msgid ""
+"The model(s) could not be sliced with current settings.<LF>Most likely the "
+"walls are thinner than the extrusion width."
+msgstr ""
+
+#. Menu Item
+msgid "The percentage must be in the range 1%% to 100%%."
+msgstr ""
+
+#. Widget
+msgid ""
+"The warm-up time can be<LF>approximated: Time ~= a * T^2<LF>Pick a "
+"temperature between<LF>the main and keep-warm."
+msgstr ""
+
+#. Menu Item
+msgid "There is already a Material named '%s'"
+msgstr ""
+
+#. Menu Item
+msgid "There is already a Printer named '%s'"
+msgstr ""
+
+#. Menu Item
+msgid "There is already a Style named '%s'"
+msgstr ""
+
+#. Menu Item
+msgid "There is already a Support named '%s'"
+msgstr ""
+
+#. Menu Item
+msgid ""
+"There is no [Cool & Retire Old Ext] G-code defined.  Using the following:<LF>"
+"%s"
+msgstr ""
+
+#. Menu Item
+msgid ""
+"There is no [Cool Same Ext] G-code defined.  Using the following from [Cool "
+"& Retire Old Ext]:<LF>%s"
+msgstr ""
+
+#. Menu Item
+msgid "There is no [Prefix] G-code defined.  Using the following:<LF>%s"
+msgstr ""
+
+#. Menu Item
+msgid "There is no [Preheat] G-code defined.  Disabling preheat.<LF>"
+msgstr ""
+
+#. Menu Item
+msgid ""
+"There is no [Select New Ext & Warm] G-code defined.  Using the following:<LF>"
+"%s"
+msgstr ""
+
+#. Menu Item
+msgid ""
+"There is no [Warm Same Ext] G-code defined.  Using the following from "
+"[Select New Ext & Warm]:<LF>%s"
+msgstr ""
+
+#. Widget
+msgid "Theta"
+msgstr ""
+
+#. Menu Item
+msgid "This will overwrite any settings above this level.<LF>Are you sure?"
+msgstr "將覆蓋所有設定<LF>你確定要執行嗎?"
+
+#. Widget
+msgid ""
+"To calculate the cost, you<LF>will need to print out one<LF>object and weigh "
+"it.<LF>(raft and all)"
+msgstr "計算打印一個物件<LF>全部材料花費的成本"
+
+#. Widget
+msgid "Top"
+msgstr "上"
+
+#. Tooltip for 'Top'
+msgid "How much each path should overlap the previous layer on the topside."
+msgstr ""
+"當層表面外圈與前層表面外圈XY路徑的偏移量，如果偏移量小於設定值則會啟用自動層"
+"高漸變，否則維持固定層厚。(建議值設定50%)."
+
+#. Menu Item
+msgid "Transform Mesh"
+msgstr ""
+
+#. Menu Item
+msgid "Translate Tooltips Only"
+msgstr "僅翻譯提示"
+
+#. Widget
+msgid "Triangle Errors"
+msgstr ""
+
+#. Widget
+msgid "Trigger [mm]"
+msgstr "回抽觸發距離"
+
+#. Tooltip for 'Trigger [mm]'
+msgid ""
+"Any jump > this threshold will force a wipe and destring, so a 0 would force "
+"a destring/wipe on all travels"
+msgstr "大於這個設定值才啟用回抽"
+
+#. Widget
+msgid "Tune_Value at Z = 0 [mm]"
+msgstr ""
+
+#. Widget
+msgid "Tune_Value at Z = top"
+msgstr ""
+
+#. Widget
+msgid "Tuned Parameter"
+msgstr ""
+
+#. Menu Item
+msgid "Tuning Wizard"
+msgstr "輔助調整"
+
+#. Widget
+msgid "Tuning Wizard Configuration"
+msgstr ""
+
+#. Menu Item
+msgid "Ultra"
+msgstr "極限"
+
+#. Menu Item
+msgid "Unsupported Section Tinting<LF>(on all path types)"
+msgstr "所有不支持的顏色區段著色"
+
+#. Menu Item
+msgid "Use Unique Filenames on Save"
+msgstr "存檔使用唯一檔名"
+
+#. Widget
+msgid "Use a Raft"
+msgstr ""
+
+#. Tooltip for 'Use a Raft'
+msgid ""
+"Rafts are used to either overcome bed irregularities, or to improve adhesion "
+"when printing with a material that does not adhere well to the bed."
+msgstr ""
+
+#. Menu Item
+msgid "Use the [Ext Map] tab to map this material to an extruder for printing."
+msgstr ""
+
+#. Widget
+msgid "Verify Custom Tokens"
+msgstr ""
+
+#. Widget
+msgid "ViscoElasticity"
+msgstr ""
+
+#. Widget
+msgid "Viscosity [Pa*s]"
+msgstr ""
+
+#. Tooltip for 'Viscosity [Pa*s]'
+msgid ""
+"Viscosity of the plastic at the main extrusion temperature.  ABS is ~= 1000 "
+"[Pascal*seconds]"
+msgstr ""
+
+#. Menu Item
+msgid ""
+"WARNING: Slicing may use up to %1.1f MB<LF>('RAM Warning' is set at %1.1f "
+"MB, system has %1.1f RAM)%s"
+msgstr ""
+
+#. Widget
+msgid "Warm"
+msgstr "保溫"
+
+#. Tooltip for 'Warm'
+msgid ""
+"Set head to this temp when not extruding...less energy and ooze ~65% of the "
+"main temp is a good rule of thumb"
+msgstr "不擠出時的溫度設定，可以減少噴頭溢料"
+
+#. Widget
+msgid "Warm<LF>Same<LF>Ext"
+msgstr ""
+
+#. Tooltip for 'Warm<LF>Same<LF>Ext'
+msgid "This G-code is inserted when the current extruder is warmed."
+msgstr ""
+
+#. Widget
+msgid "Warm-Up"
+msgstr ""
+
+#. Menu Item
+msgid "Warnings"
+msgstr "警告提示"
+
+#. Widget
+msgid "Weight for an entire spool"
+msgstr "整捲線軸的重量"
+
+#. Tooltip for 'Weight for an entire spool'
+msgid "Weight of the material on a new spool"
+msgstr "新線軸的材料總重量"
+
+#. Menu Item
+msgid "What would you like the new %s Profile to be named?"
+msgstr ""
+
+#. Widget
+msgid ""
+"When a parameter is selected, the exported G-code<LF>will be tuned as a "
+"function of Z.  The horrible yellow<LF>color indicates that the exported G-"
+"code is affected.<LF><LF>Note: The actual tuning value is available in "
+"the<LF>G-code using the <TUNINGVAL> token."
+msgstr ""
+
+#. Menu Item
+msgid "Widget Scheme"
+msgstr "視窗方案"
+
+#. Widget
+msgid "Width"
+msgstr "寬度"
+
+#. Tooltip for 'Width'
+msgid "Extrusion Width of the Interface paths"
+msgstr "表面支撐擠出寬度"
+
+#. Widget
+msgid "Wipe [mm]"
+msgstr "抹除 [mm]"
+
+#. Tooltip for 'Wipe [mm]'
+msgid ""
+"Before moving to a new region, back-tracks over the most recent path or "
+"continues over the loop by this distance."
+msgstr ""
+"在移動到新的列印區塊前，在最近路徑上進行抹除一段路徑，防止噴頭移動時溢料."
+
+#. Menu Item
+msgid "Wizards"
+msgstr "建立"
+
+#. Tooltip for 'X'
+msgid "Reset the veiw to be Aligned with the X axis"
+msgstr ""
+
+#. Widget
+msgid "X "
+msgstr ""
+
+#. Tooltip for 'X '
+msgid "Width of the print bed in mm"
+msgstr ""
+
+#. Menu Item
+msgid "X => Up"
+msgstr ""
+
+#. Widget
+msgid "X off 2"
+msgstr ""
+
+#. Tooltip for 'X off 2'
+msgid "X Offset of ext 2 from ext 1"
+msgstr ""
+
+#. Widget
+msgid "X off 3"
+msgstr ""
+
+#. Tooltip for 'X off 3'
+msgid "X Offset of ext 3 from ext 1"
+msgstr ""
+
+#. Widget
+msgid "X off 4"
+msgstr ""
+
+#. Tooltip for 'X off 4'
+msgid "X Offset of ext 4 from ext 1"
+msgstr ""
+
+#. Widget
+msgid "X&&Y"
+msgstr ""
+
+#. Tooltip for 'X&&Y'
+msgid ""
+"How many steps per mm in X & Y.  This number is complex for Delta printers, "
+"but is used to ensure that paths don't have segments smaller than a "
+"threshold (2 steps)."
+msgstr ""
+
+#. Widget
+msgid "X,Y Travel Speed"
+msgstr "XY空跑移動速度"
+
+#. Widget
+msgid "XY Accel [mm/s^2]"
+msgstr "XY加速度"
+
+#. Tooltip for 'XY Accel [mm/s^2]'
+msgid "Acceleration of the print-head in X & Y, used for timing estimates"
+msgstr "XY移動的加速度，用於預覽列印時間評估，單位是mm/s^2"
+
+#. Widget
+msgid "XY Steps per mm"
+msgstr ""
+
+#. Widget
+msgid "Y"
+msgstr ""
+
+#. Tooltip for 'Y'
+msgid "Reset the veiw to be Aligned with the Y axis"
+msgstr ""
+
+#. Widget
+msgid "Y "
+msgstr ""
+
+#. Tooltip for 'Y '
+msgid "Depth of the print bed in mm"
+msgstr ""
+
+#. Menu Item
+msgid "Y => Up"
+msgstr ""
+
+#. Widget
+msgid "Y @<->"
+msgstr ""
+
+#. Tooltip for 'Y @<->'
+msgid "Available print depth of the bed."
+msgstr ""
+
+#. Widget
+msgid "Y off 2"
+msgstr ""
+
+#. Tooltip for 'Y off 2'
+msgid "Y Offset of ext 2 from ext 1"
+msgstr ""
+
+#. Widget
+msgid "Y off 3"
+msgstr ""
+
+#. Tooltip for 'Y off 3'
+msgid "Y Offset of ext 3 from ext 1"
+msgstr ""
+
+#. Widget
+msgid "Y off 4"
+msgstr ""
+
+#. Tooltip for 'Y off 4'
+msgid "Y Offset of ext 4 from ext 1"
+msgstr ""
+
+#. Menu Item
+msgid "Yes"
+msgstr "是的"
+
+#. Menu Item
+msgid "Yes, overwrite"
+msgstr "是，複寫設定"
+
+#. Menu Item
+msgid "You must have at least one printer, material, and style defined."
+msgstr ""
+
+#. Widget
+msgid "Z"
+msgstr ""
+
+#. Tooltip for 'Z'
+msgid ""
+"Layers are rounded to integer multiples of Z steps.  For Delta printers just "
+"leave at 0."
+msgstr ""
+
+#. Widget
+msgid "Z "
+msgstr ""
+
+#. Tooltip for 'Z '
+msgid "Height of the build volume in mm"
+msgstr ""
+
+#. Widget
+msgid "Z @<->"
+msgstr ""
+
+#. Tooltip for 'Z @<->'
+msgid "Maximum height of a print"
+msgstr "可打印最大高度"
+
+#. Widget
+msgid "Z Band"
+msgstr "表面<LF>厚度"
+
+#. Tooltip for 'Z Band'
+msgid ""
+"The Interface support transitions on multiples of this (useful for non-flat "
+"supported overhangs)."
+msgstr "表面支撐係數."
+
+#. Widget
+msgid "Z Offset [mm]"
+msgstr "Z軸偏移量 [mm]"
+
+#. Tooltip for 'Z Offset [mm]'
+msgid "Add an offset to the output G-code's Z values"
+msgstr "給定Z軸一個高度偏移量。(以切片方式微調修正實際的Z零高度)"
+
+#. Widget
+msgid "Z Step [mm]"
+msgstr "Z單步距離"
+
+#. Tooltip for 'Z Step [mm]'
+msgid ""
+"The Z resolution of the printer in [mm].  (Used for assigning layer "
+"thicknesses)"
+msgstr "列印機的Z軸每單位移動的分辨率，單位[mm]。 （用於分配層厚度）"
+
+#. Widget
+msgid "Z value"
+msgstr "Z軸高度"
+
+#. Tooltip for 'Z value'
+msgid "Select if the Z value matches the G-code or the Model"
+msgstr "選擇Z值是否與G碼或是模型匹配"
+
+#. Widget
+msgid "Z-Roof [mm]"
+msgstr "Z頂端 [mm]"
+
+#. Tooltip for 'Z-Roof [mm]'
+msgid ""
+"No sheath will be generated above this height [mm].  Make < 0 to disable the "
+"limit.  Press Enter to preview the level."
+msgstr "限制支撐護套的高度，在此設定值以上不會產生支撐護套。單位是mm."
+
+#. Widget
+msgid "Z-Settle [mm]"
+msgstr "Z軸定位 [mm]"
+
+#. Tooltip for 'Z-Settle [mm]'
+msgid ""
+"overshoot then return on Z moves (so last move is against gravity...removes "
+"slop), good for printers where the bed moves down (instead of head moving up)"
+msgstr "用於平台下降式的印表機消除螺桿回差用，三角洲機器應設定為0"
+
+#. Widget
+msgid "Z-Speed"
+msgstr "Z軸速度"
+
+#. Tooltip for 'Z-Speed'
+msgid "Z-bed / Z-head travel speed"
+msgstr "限制Z軸上下移動的速度，單位是mm/s"
+
+#. Widget
+msgid "Z-lift[mm]"
+msgstr "Z抬升"
+
+#. Tooltip for 'Z-lift[mm]'
+msgid ""
+"After a destring (if enabled), before a travel, lift the head by this height."
+msgstr ""
+"不列印時的移動路徑啟用抬升可避免噴頭移動過程將物件撞倒。設置0可避免回抽."
+
+#. Widget
+msgid "Zgap"
+msgstr "Z間隙"
+
+#. Tooltip for 'Zgap'
+msgid "Vertical Gap [mm] between the support and the object."
+msgstr "支撐與物件Z間隙設定，單位是mm."
+
+#. Widget
+msgid "[*] N Layers"
+msgstr ""
+
+#. Tooltip for '[*] N Layers'
+msgid ""
+"The number of layers before inserting the 'N Layers' G-code (0 disables)"
+msgstr ""
+
+#. Menu Item
+msgid "[Precision: %1.0f%%]"
+msgstr ""
+
+#. Widget
+msgid "[Steps / mm]"
+msgstr ""
+
+#. Widget
+msgid "interface<LF>XYgap"
+msgstr "表面<LF>XY間隙"
+
+#. Tooltip for 'interface<LF>XYgap'
+msgid ""
+"Horizontal Gap between the interface and the object in [mm] or in [% of "
+"Extrusion Width]"
+msgstr "物件與表面支撐XY間隙，單位是[mm]or[%]"
+
+#. Widget
+msgid "just for resizing"
+msgstr ""
+
+#. Widget
+msgid "vP [mm/s]"
+msgstr "預擠速度"
+
+#. Tooltip for 'vP [mm/s]'
+msgid "How fast to preload the extruder [mm/s]"
+msgstr "使用多少速度進行預擠"
+
+#. Widget
+msgid "velDstr [mm/s]"
+msgstr "回抽速度"
+
+#. Tooltip for 'velDstr [mm/s]'
+msgid "How fast to retract / prime for destring under 5D firmware in [mm/s]"
+msgstr "使用多少速度進行回抽"
